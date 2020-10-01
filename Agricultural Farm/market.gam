@@ -1,0 +1,34 @@
+# Filename:market.gam
+# export classpath:
+# Title:market
+# background:
+# cant units:0
+# Cant Ports:5
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:142
+# 	Port ID:in_type
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:143
+# 	Port ID:in_bushels
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:144
+# 	Port ID:out_type
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:145
+# 	Port ID:out_bushels
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:146
+# 	Port ID:out_sales
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# Cant Links:0
+# Initial Name:
+# Vars cant:0

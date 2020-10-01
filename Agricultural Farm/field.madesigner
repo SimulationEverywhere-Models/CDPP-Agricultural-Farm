@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_xK1n0cDiEeeRsoTBvxyuNA" modelName="top" defined="true" sourceFileRelativePath="field.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_xK1n0sDiEeeRsoTBvxyuNA" portName="out_water_field" portType="OUTPUT_PORT" incomingLinks="_xK1n_sDiEeeRsoTBvxyuNA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_xK1n08DiEeeRsoTBvxyuNA" portName="out_water_surface" portType="OUTPUT_PORT" incomingLinks="_xK1n_8DiEeeRsoTBvxyuNA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_xK1n1MDiEeeRsoTBvxyuNA" portName="out_water_type" portType="OUTPUT_PORT" incomingLinks="_xK1oAMDiEeeRsoTBvxyuNA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_xK1n1cDiEeeRsoTBvxyuNA" portName="out_sower_field" portType="OUTPUT_PORT" incomingLinks="_xK1oAcDiEeeRsoTBvxyuNA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_xK1n1sDiEeeRsoTBvxyuNA" portName="out_sower_surface" portType="OUTPUT_PORT" incomingLinks="_xK1oAsDiEeeRsoTBvxyuNA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_xK1n18DiEeeRsoTBvxyuNA" portName="out_sower_type" portType="OUTPUT_PORT" incomingLinks="_xK1oA8DiEeeRsoTBvxyuNA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_xK1n2MDiEeeRsoTBvxyuNA" portName="out_harvest_field" portType="OUTPUT_PORT" incomingLinks="_xK1oBMDiEeeRsoTBvxyuNA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_xK1n2cDiEeeRsoTBvxyuNA" portName="out_harvest_surface" portType="OUTPUT_PORT" incomingLinks="_xK1oBcDiEeeRsoTBvxyuNA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_xK1n2sDiEeeRsoTBvxyuNA" portName="out_harvest_type" portType="OUTPUT_PORT" incomingLinks="_xK1oBsDiEeeRsoTBvxyuNA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_xK1n28DiEeeRsoTBvxyuNA" portName="in_done" outgoingLinks="_xK1n_MDiEeeRsoTBvxyuNA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_xK1n3MDiEeeRsoTBvxyuNA" portName="in_stop" outgoingLinks="_xK1n_cDiEeeRsoTBvxyuNA"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_xK1n3cDiEeeRsoTBvxyuNA" instanceName="field">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_xK1n3sDiEeeRsoTBvxyuNA" modelName="field" defined="true" sourceFileRelativePath="field.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_xK1n38DiEeeRsoTBvxyuNA" portName="in_done" incomingLinks="_xK1n_MDiEeeRsoTBvxyuNA"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_xK1n4MDiEeeRsoTBvxyuNA" portName="in_stop" incomingLinks="_xK1n_cDiEeeRsoTBvxyuNA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_xK1n4cDiEeeRsoTBvxyuNA" portName="out_water_field" portType="OUTPUT_PORT" outgoingLinks="_xK1n_sDiEeeRsoTBvxyuNA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_xK1n4sDiEeeRsoTBvxyuNA" portName="out_water_surface" portType="OUTPUT_PORT" outgoingLinks="_xK1n_8DiEeeRsoTBvxyuNA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_xK1n48DiEeeRsoTBvxyuNA" portName="out_water_type" portType="OUTPUT_PORT" outgoingLinks="_xK1oAMDiEeeRsoTBvxyuNA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_xK1n5MDiEeeRsoTBvxyuNA" portName="out_sower_field" portType="OUTPUT_PORT" outgoingLinks="_xK1oAcDiEeeRsoTBvxyuNA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_xK1n5cDiEeeRsoTBvxyuNA" portName="out_sower_surface" portType="OUTPUT_PORT" outgoingLinks="_xK1oAsDiEeeRsoTBvxyuNA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_xK1n5sDiEeeRsoTBvxyuNA" portName="out_sower_type" portType="OUTPUT_PORT" outgoingLinks="_xK1oA8DiEeeRsoTBvxyuNA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_xK1n58DiEeeRsoTBvxyuNA" portName="out_harvest_field" portType="OUTPUT_PORT" outgoingLinks="_xK1oBMDiEeeRsoTBvxyuNA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_xK1n6MDiEeeRsoTBvxyuNA" portName="out_harvest_surface" portType="OUTPUT_PORT" outgoingLinks="_xK1oBcDiEeeRsoTBvxyuNA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_xK1n6cDiEeeRsoTBvxyuNA" portName="out_harvest_type" portType="OUTPUT_PORT" outgoingLinks="_xK1oBsDiEeeRsoTBvxyuNA"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_xK1n6sDiEeeRsoTBvxyuNA" name="surface"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_xK1n68DiEeeRsoTBvxyuNA" name="type"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_xK1n7MDiEeeRsoTBvxyuNA" name="id"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_xK1n7cDiEeeRsoTBvxyuNA" name="growth_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_xK1n7sDiEeeRsoTBvxyuNA" name="growth_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_xK1n78DiEeeRsoTBvxyuNA" name="growth_rate_3"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_xK1n8MDiEeeRsoTBvxyuNA" name="evaporation_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_xK1n8cDiEeeRsoTBvxyuNA" name="evaporation_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_xK1n8sDiEeeRsoTBvxyuNA" name="evaporation_rate_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_xK1n88DiEeeRsoTBvxyuNA" name="surface" value="100"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_xK1n9MDiEeeRsoTBvxyuNA" name="type" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_xK1n9cDiEeeRsoTBvxyuNA" name="id" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_xK1n9sDiEeeRsoTBvxyuNA" name="growth_rate_1" value="3"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_xK1n98DiEeeRsoTBvxyuNA" name="growth_rate_2" value="6"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_xK1n-MDiEeeRsoTBvxyuNA" name="growth_rate_3" value="9"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_xK1n-cDiEeeRsoTBvxyuNA" name="evaporation_rate_1" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_xK1n-sDiEeeRsoTBvxyuNA" name="evaporation_rate_2" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_xK1n-8DiEeeRsoTBvxyuNA" name="evaporation_rate_3" value="3"/>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_xK1n_MDiEeeRsoTBvxyuNA" target="_xK1n38DiEeeRsoTBvxyuNA" source="_xK1n28DiEeeRsoTBvxyuNA"/>
+    <links xmi:type="CoupledLink" xmi:id="_xK1n_cDiEeeRsoTBvxyuNA" target="_xK1n4MDiEeeRsoTBvxyuNA" source="_xK1n3MDiEeeRsoTBvxyuNA"/>
+    <links xmi:type="CoupledLink" xmi:id="_xK1n_sDiEeeRsoTBvxyuNA" target="_xK1n0sDiEeeRsoTBvxyuNA" source="_xK1n4cDiEeeRsoTBvxyuNA"/>
+    <links xmi:type="CoupledLink" xmi:id="_xK1n_8DiEeeRsoTBvxyuNA" target="_xK1n08DiEeeRsoTBvxyuNA" source="_xK1n4sDiEeeRsoTBvxyuNA"/>
+    <links xmi:type="CoupledLink" xmi:id="_xK1oAMDiEeeRsoTBvxyuNA" target="_xK1n1MDiEeeRsoTBvxyuNA" source="_xK1n48DiEeeRsoTBvxyuNA"/>
+    <links xmi:type="CoupledLink" xmi:id="_xK1oAcDiEeeRsoTBvxyuNA" target="_xK1n1cDiEeeRsoTBvxyuNA" source="_xK1n5MDiEeeRsoTBvxyuNA"/>
+    <links xmi:type="CoupledLink" xmi:id="_xK1oAsDiEeeRsoTBvxyuNA" target="_xK1n1sDiEeeRsoTBvxyuNA" source="_xK1n5cDiEeeRsoTBvxyuNA"/>
+    <links xmi:type="CoupledLink" xmi:id="_xK1oA8DiEeeRsoTBvxyuNA" target="_xK1n18DiEeeRsoTBvxyuNA" source="_xK1n5sDiEeeRsoTBvxyuNA"/>
+    <links xmi:type="CoupledLink" xmi:id="_xK1oBMDiEeeRsoTBvxyuNA" target="_xK1n2MDiEeeRsoTBvxyuNA" source="_xK1n58DiEeeRsoTBvxyuNA"/>
+    <links xmi:type="CoupledLink" xmi:id="_xK1oBcDiEeeRsoTBvxyuNA" target="_xK1n2cDiEeeRsoTBvxyuNA" source="_xK1n6MDiEeeRsoTBvxyuNA"/>
+    <links xmi:type="CoupledLink" xmi:id="_xK1oBsDiEeeRsoTBvxyuNA" target="_xK1n2sDiEeeRsoTBvxyuNA" source="_xK1n6cDiEeeRsoTBvxyuNA"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_xK1oB8DiEeeRsoTBvxyuNA" type="DEVS" element="_xK1n0cDiEeeRsoTBvxyuNA" name="field.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_xK1oCMDiEeeRsoTBvxyuNA"/>
+  </notation:Diagram>
+</xmi:XMI>

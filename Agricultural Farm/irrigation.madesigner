@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_8XbSoLzdEeeProQKqOW7ng" modelName="top" defined="true" sourceFileRelativePath="irrigation.MA">
+    <ports xmi:type="CoupledPort" xmi:id="_8XbSobzdEeeProQKqOW7ng" portName="out_id" portType="OUTPUT_PORT" incomingLinks="_8XbSsLzdEeeProQKqOW7ng"/>
+    <ports xmi:type="CoupledPort" xmi:id="_8XbSorzdEeeProQKqOW7ng" portName="in_id" outgoingLinks="_8XbSrbzdEeeProQKqOW7ng"/>
+    <ports xmi:type="CoupledPort" xmi:id="_8XbSo7zdEeeProQKqOW7ng" portName="in_surface" outgoingLinks="_8XbSrrzdEeeProQKqOW7ng"/>
+    <ports xmi:type="CoupledPort" xmi:id="_8XbSpLzdEeeProQKqOW7ng" portName="in_type" outgoingLinks="_8XbSr7zdEeeProQKqOW7ng"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_8XbSpbzdEeeProQKqOW7ng" instanceName="irrigation">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_8XbSprzdEeeProQKqOW7ng" modelName="irrigation" defined="true" sourceFileRelativePath="irrigation.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_8XbSp7zdEeeProQKqOW7ng" portName="in_id" incomingLinks="_8XbSrbzdEeeProQKqOW7ng"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_8XbSqLzdEeeProQKqOW7ng" portName="in_surface" incomingLinks="_8XbSrrzdEeeProQKqOW7ng"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_8XbSqbzdEeeProQKqOW7ng" portName="in_type" incomingLinks="_8XbSr7zdEeeProQKqOW7ng"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_8XbSqrzdEeeProQKqOW7ng" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_8XbSsLzdEeeProQKqOW7ng"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_8XbSq7zdEeeProQKqOW7ng" name="speed"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_8XbSrLzdEeeProQKqOW7ng" name="speed" value="10"/>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_8XbSrbzdEeeProQKqOW7ng" target="_8XbSp7zdEeeProQKqOW7ng" source="_8XbSorzdEeeProQKqOW7ng"/>
+    <links xmi:type="CoupledLink" xmi:id="_8XbSrrzdEeeProQKqOW7ng" target="_8XbSqLzdEeeProQKqOW7ng" source="_8XbSo7zdEeeProQKqOW7ng"/>
+    <links xmi:type="CoupledLink" xmi:id="_8XbSr7zdEeeProQKqOW7ng" target="_8XbSqbzdEeeProQKqOW7ng" source="_8XbSpLzdEeeProQKqOW7ng"/>
+    <links xmi:type="CoupledLink" xmi:id="_8XbSsLzdEeeProQKqOW7ng" target="_8XbSobzdEeeProQKqOW7ng" source="_8XbSqrzdEeeProQKqOW7ng"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_8Xb5sLzdEeeProQKqOW7ng" type="DEVS" element="_8XbSoLzdEeeProQKqOW7ng" name="irrigation.madesigner" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_8XouALzdEeeProQKqOW7ng" type="2002" element="_8XbSobzdEeeProQKqOW7ng">
+      <children xmi:type="notation:Node" xmi:id="_8XouBbzdEeeProQKqOW7ng" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_8XouAbzdEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_8XouArzdEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_8XouA7zdEeeProQKqOW7ng"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8XouBLzdEeeProQKqOW7ng"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_8XpVELzdEeeProQKqOW7ng" type="2002" element="_8XbSorzdEeeProQKqOW7ng">
+      <children xmi:type="notation:Node" xmi:id="_8XpVFbzdEeeProQKqOW7ng" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_8XpVEbzdEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_8XpVErzdEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_8XpVE7zdEeeProQKqOW7ng"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8XpVFLzdEeeProQKqOW7ng" x="108"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_8XpVFrzdEeeProQKqOW7ng" type="2002" element="_8XbSo7zdEeeProQKqOW7ng">
+      <children xmi:type="notation:Node" xmi:id="_8XpVG7zdEeeProQKqOW7ng" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_8XpVF7zdEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_8XpVGLzdEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_8XpVGbzdEeeProQKqOW7ng"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8XpVGrzdEeeProQKqOW7ng" x="216"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_8XpVHLzdEeeProQKqOW7ng" type="2002" element="_8XbSpLzdEeeProQKqOW7ng">
+      <children xmi:type="notation:Node" xmi:id="_8Xp8ILzdEeeProQKqOW7ng" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_8XpVHbzdEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_8XpVHrzdEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_8XpVH7zdEeeProQKqOW7ng"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8XpVILzdEeeProQKqOW7ng" x="336"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_8Xp8IbzdEeeProQKqOW7ng" type="2003" element="_8XbSpbzdEeeProQKqOW7ng">
+      <children xmi:type="notation:Node" xmi:id="_8Xp8JLzdEeeProQKqOW7ng" type="5007"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_8Xp8IrzdEeeProQKqOW7ng" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8Xp8I7zdEeeProQKqOW7ng" x="432" y="180"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_8Xb5sbzdEeeProQKqOW7ng"/>
+  </notation:Diagram>
+</xmi:XMI>

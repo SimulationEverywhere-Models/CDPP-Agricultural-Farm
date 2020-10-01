@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_VVFSMLxeEeeuRtCdyCEdcw" modelName="top" defined="true" sourceFileRelativePath="harvester.MA">
+    <ports xmi:type="CoupledPort" xmi:id="_VVFSMbxeEeeuRtCdyCEdcw" portName="out_id" portType="OUTPUT_PORT" incomingLinks="_VVFSSrxeEeeuRtCdyCEdcw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_VVFSMrxeEeeuRtCdyCEdcw" portName="out_bushels" portType="OUTPUT_PORT" incomingLinks="_VVFSS7xeEeeuRtCdyCEdcw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_VVFSM7xeEeeuRtCdyCEdcw" portName="out_type" portType="OUTPUT_PORT" incomingLinks="_VVFSTLxeEeeuRtCdyCEdcw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_VVFSNLxeEeeuRtCdyCEdcw" portName="in_id" outgoingLinks="_VVFSR7xeEeeuRtCdyCEdcw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_VVFSNbxeEeeuRtCdyCEdcw" portName="in_surface" outgoingLinks="_VVFSSLxeEeeuRtCdyCEdcw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_VVFSNrxeEeeuRtCdyCEdcw" portName="in_type" outgoingLinks="_VVFSSbxeEeeuRtCdyCEdcw"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_VVFSN7xeEeeuRtCdyCEdcw" instanceName="harvester">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_VVFSOLxeEeeuRtCdyCEdcw" modelName="harvester" defined="true" sourceFileRelativePath="harvester.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_VVFSObxeEeeuRtCdyCEdcw" portName="in_id" incomingLinks="_VVFSR7xeEeeuRtCdyCEdcw"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_VVFSOrxeEeeuRtCdyCEdcw" portName="in_surface" incomingLinks="_VVFSSLxeEeeuRtCdyCEdcw"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_VVFSO7xeEeeuRtCdyCEdcw" portName="in_type" incomingLinks="_VVFSSbxeEeeuRtCdyCEdcw"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_VVFSPLxeEeeuRtCdyCEdcw" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_VVFSSrxeEeeuRtCdyCEdcw"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_VVFSPbxeEeeuRtCdyCEdcw" portName="out_bushels" portType="OUTPUT_PORT" outgoingLinks="_VVFSS7xeEeeuRtCdyCEdcw"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_VVFSPrxeEeeuRtCdyCEdcw" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_VVFSTLxeEeeuRtCdyCEdcw"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_VVFSP7xeEeeuRtCdyCEdcw" name="speed"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_VVFSQLxeEeeuRtCdyCEdcw" name="yield_type_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_VVFSQbxeEeeuRtCdyCEdcw" name="yield_type_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_VVFSQrxeEeeuRtCdyCEdcw" name="yield_type_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_VVFSQ7xeEeeuRtCdyCEdcw" name="speed" value="10"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_VVFSRLxeEeeuRtCdyCEdcw" name="yield_type_1" value="150"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_VVFSRbxeEeeuRtCdyCEdcw" name="yield_type_2" value="120"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_VVFSRrxeEeeuRtCdyCEdcw" name="yield_type_3" value="170"/>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_VVFSR7xeEeeuRtCdyCEdcw" target="_VVFSObxeEeeuRtCdyCEdcw" source="_VVFSNLxeEeeuRtCdyCEdcw"/>
+    <links xmi:type="CoupledLink" xmi:id="_VVFSSLxeEeeuRtCdyCEdcw" target="_VVFSOrxeEeeuRtCdyCEdcw" source="_VVFSNbxeEeeuRtCdyCEdcw"/>
+    <links xmi:type="CoupledLink" xmi:id="_VVFSSbxeEeeuRtCdyCEdcw" target="_VVFSO7xeEeeuRtCdyCEdcw" source="_VVFSNrxeEeeuRtCdyCEdcw"/>
+    <links xmi:type="CoupledLink" xmi:id="_VVFSSrxeEeeuRtCdyCEdcw" target="_VVFSMbxeEeeuRtCdyCEdcw" source="_VVFSPLxeEeeuRtCdyCEdcw"/>
+    <links xmi:type="CoupledLink" xmi:id="_VVFSS7xeEeeuRtCdyCEdcw" target="_VVFSMrxeEeeuRtCdyCEdcw" source="_VVFSPbxeEeeuRtCdyCEdcw"/>
+    <links xmi:type="CoupledLink" xmi:id="_VVFSTLxeEeeuRtCdyCEdcw" target="_VVFSM7xeEeeuRtCdyCEdcw" source="_VVFSPrxeEeeuRtCdyCEdcw"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_VVHHYLxeEeeuRtCdyCEdcw" type="DEVS" element="_VVFSMLxeEeeuRtCdyCEdcw" name="harvester.madesigner" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_fWM78LzZEeeProQKqOW7ng" type="2002" element="_VVFSMbxeEeeuRtCdyCEdcw">
+      <children xmi:type="notation:Node" xmi:id="_fWM79bzZEeeProQKqOW7ng" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_fWM78bzZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_fWM78rzZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_fWM787zZEeeProQKqOW7ng"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fWM79LzZEeeProQKqOW7ng"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_fWNjALzZEeeProQKqOW7ng" type="2002" element="_VVFSMrxeEeeuRtCdyCEdcw">
+      <children xmi:type="notation:Node" xmi:id="_fWNjBbzZEeeProQKqOW7ng" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_fWNjAbzZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_fWNjArzZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_fWNjA7zZEeeProQKqOW7ng"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fWNjBLzZEeeProQKqOW7ng" x="110"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_fWNjBrzZEeeProQKqOW7ng" type="2002" element="_VVFSM7xeEeeuRtCdyCEdcw">
+      <children xmi:type="notation:Node" xmi:id="_fWNjC7zZEeeProQKqOW7ng" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_fWNjB7zZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_fWNjCLzZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_fWNjCbzZEeeProQKqOW7ng"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fWNjCrzZEeeProQKqOW7ng" x="220"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_fWNjDLzZEeeProQKqOW7ng" type="2002" element="_VVFSNLxeEeeuRtCdyCEdcw">
+      <children xmi:type="notation:Node" xmi:id="_fWOKELzZEeeProQKqOW7ng" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_fWNjDbzZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_fWNjDrzZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_fWNjD7zZEeeProQKqOW7ng"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fWNjELzZEeeProQKqOW7ng" x="330"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_fWOKEbzZEeeProQKqOW7ng" type="2002" element="_VVFSNbxeEeeuRtCdyCEdcw">
+      <children xmi:type="notation:Node" xmi:id="_fWOxILzZEeeProQKqOW7ng" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_fWOKErzZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_fWOKE7zZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_fWOKFLzZEeeProQKqOW7ng"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fWOKFbzZEeeProQKqOW7ng" x="440"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_fWOxIbzZEeeProQKqOW7ng" type="2002" element="_VVFSNrxeEeeuRtCdyCEdcw">
+      <children xmi:type="notation:Node" xmi:id="_fWOxJrzZEeeProQKqOW7ng" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_fWOxIrzZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_fWOxI7zZEeeProQKqOW7ng"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_fWOxJLzZEeeProQKqOW7ng"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fWOxJbzZEeeProQKqOW7ng" x="550"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_fWOxJ7zZEeeProQKqOW7ng" type="2003" element="_VVFSN7xeEeeuRtCdyCEdcw">
+      <children xmi:type="notation:Node" xmi:id="_fWPYMLzZEeeProQKqOW7ng" type="5007"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_fWOxKLzZEeeProQKqOW7ng" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fWOxKbzZEeeProQKqOW7ng" x="456" y="216"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_VVHHYbxeEeeuRtCdyCEdcw"/>
+  </notation:Diagram>
+</xmi:XMI>

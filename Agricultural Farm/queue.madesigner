@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_0kY8sb9lEeeC-LEzUhXKKg" modelName="top" defined="true" sourceFileRelativePath="queue.MA">
+    <ports xmi:type="CoupledPort" xmi:id="_0kY8sr9lEeeC-LEzUhXKKg" portName="out_id" portType="OUTPUT_PORT" incomingLinks="_0kY8wr9lEeeC-LEzUhXKKg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_0kY8s79lEeeC-LEzUhXKKg" portName="out_surface" portType="OUTPUT_PORT" incomingLinks="_0kY8w79lEeeC-LEzUhXKKg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_0kY8tL9lEeeC-LEzUhXKKg" portName="out_type" portType="OUTPUT_PORT" incomingLinks="_0kY8xL9lEeeC-LEzUhXKKg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_0kY8tb9lEeeC-LEzUhXKKg" portName="out_field_1" portType="OUTPUT_PORT" incomingLinks="_0kY8xb9lEeeC-LEzUhXKKg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_0kY8tr9lEeeC-LEzUhXKKg" portName="out_field_2" portType="OUTPUT_PORT" incomingLinks="_0kY8xr9lEeeC-LEzUhXKKg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_0kY8t79lEeeC-LEzUhXKKg" portName="out_field_3" portType="OUTPUT_PORT" incomingLinks="_0kY8x79lEeeC-LEzUhXKKg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_0kY8uL9lEeeC-LEzUhXKKg" portName="in_done" outgoingLinks="_0kY8vr9lEeeC-LEzUhXKKg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_0kY8ub9lEeeC-LEzUhXKKg" portName="in_surface" outgoingLinks="_0kY8v79lEeeC-LEzUhXKKg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_0kY8ur9lEeeC-LEzUhXKKg" portName="in_field" outgoingLinks="_0kY8wL9lEeeC-LEzUhXKKg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_0kY8u79lEeeC-LEzUhXKKg" portName="in_type" outgoingLinks="_0kY8wb9lEeeC-LEzUhXKKg"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_0kY8vL9lEeeC-LEzUhXKKg" instanceName="queue">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_0kY8vb9lEeeC-LEzUhXKKg" modelName="queue" sourceFileRelativePath="queue.cpp"/>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_0kY8vr9lEeeC-LEzUhXKKg" source="_0kY8uL9lEeeC-LEzUhXKKg"/>
+    <links xmi:type="CoupledLink" xmi:id="_0kY8v79lEeeC-LEzUhXKKg" source="_0kY8ub9lEeeC-LEzUhXKKg"/>
+    <links xmi:type="CoupledLink" xmi:id="_0kY8wL9lEeeC-LEzUhXKKg" source="_0kY8ur9lEeeC-LEzUhXKKg"/>
+    <links xmi:type="CoupledLink" xmi:id="_0kY8wb9lEeeC-LEzUhXKKg" source="_0kY8u79lEeeC-LEzUhXKKg"/>
+    <links xmi:type="CoupledLink" xmi:id="_0kY8wr9lEeeC-LEzUhXKKg" target="_0kY8sr9lEeeC-LEzUhXKKg"/>
+    <links xmi:type="CoupledLink" xmi:id="_0kY8w79lEeeC-LEzUhXKKg" target="_0kY8s79lEeeC-LEzUhXKKg"/>
+    <links xmi:type="CoupledLink" xmi:id="_0kY8xL9lEeeC-LEzUhXKKg" target="_0kY8tL9lEeeC-LEzUhXKKg"/>
+    <links xmi:type="CoupledLink" xmi:id="_0kY8xb9lEeeC-LEzUhXKKg" target="_0kY8tb9lEeeC-LEzUhXKKg"/>
+    <links xmi:type="CoupledLink" xmi:id="_0kY8xr9lEeeC-LEzUhXKKg" target="_0kY8tr9lEeeC-LEzUhXKKg"/>
+    <links xmi:type="CoupledLink" xmi:id="_0kY8x79lEeeC-LEzUhXKKg" target="_0kY8t79lEeeC-LEzUhXKKg"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_0kY8yL9lEeeC-LEzUhXKKg" type="DEVS" element="_0kY8sb9lEeeC-LEzUhXKKg" name="queue.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_0kY8yb9lEeeC-LEzUhXKKg"/>
+  </notation:Diagram>
+</xmi:XMI>

@@ -1,0 +1,489 @@
+# Filename:Farm.gcm
+# export classpath:
+# Title:top
+# background:
+# cant units:7
+# 	Unit class:gui.model.unit.EditableCoupledModelUnit
+# 	Unique ID:0
+# 	location x:745
+# 	location y:535
+# 	name:sm
+# 	Filename:sm.gcm
+# 	export classpath:
+# 		class:gui.representation.Square
+# 		height:40
+# 		width:40
+# 	Unit class:gui.model.unit.EditableCoupledModelUnit
+# 	Unique ID:33
+# 	location x:745
+# 	location y:385
+# 	name:wm
+# 	Filename:wm.gcm
+# 	export classpath:
+# 		class:gui.representation.Square
+# 		height:40
+# 		width:40
+# 	Unit class:gui.model.unit.EditableCoupledModelUnit
+# 	Unique ID:66
+# 	location x:745
+# 	location y:685
+# 	name:hm
+# 	Filename:hm.gcm
+# 	export classpath:
+# 		class:gui.representation.Square
+# 		height:40
+# 		width:40
+# 	Unit class:gui.model.unit.EditableAtomicModelUnit
+# 	Unique ID:105
+# 	location x:295
+# 	location y:370
+# 	name:f1
+# 	Filename:f1.gam
+# 	export classpath:
+# 		class:gui.representation.Circle
+# 		radius:30
+# 	cant Initial params:0
+# 	Unit class:gui.model.unit.EditableAtomicModelUnit
+# 	Unique ID:117
+# 	location x:295
+# 	location y:505
+# 	name:f2
+# 	Filename:f2.gam
+# 	export classpath:
+# 		class:gui.representation.Circle
+# 		radius:30
+# 	cant Initial params:0
+# 	Unit class:gui.model.unit.EditableAtomicModelUnit
+# 	Unique ID:129
+# 	location x:295
+# 	location y:670
+# 	name:f3
+# 	Filename:f3.gam
+# 	export classpath:
+# 		class:gui.representation.Circle
+# 		radius:30
+# 	cant Initial params:0
+# 	Unit class:gui.model.unit.EditableAtomicModelUnit
+# 	Unique ID:141
+# 	location x:1075
+# 	location y:685
+# 	name:market
+# 	Filename:market.gam
+# 	export classpath:
+# 		class:gui.representation.Circle
+# 		radius:30
+# 	cant Initial params:0
+# cant ports:6
+# 	Port Class:gui.model.port.CoupledPort
+# 	Port UniqueId:147
+# 	Port ID:out_bushels
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# 	location x:1495
+# 	location y:715
+# 		class:gui.representation.OutPort
+# 		radius:30
+# 		width:30
+# 	Port Class:gui.model.port.CoupledPort
+# 	Port UniqueId:148
+# 	Port ID:out_type
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# 	location x:1495
+# 	location y:790
+# 		class:gui.representation.OutPort
+# 		radius:30
+# 		width:30
+# 	Port Class:gui.model.port.CoupledPort
+# 	Port UniqueId:149
+# 	Port ID:out_sales
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# 	location x:1495
+# 	location y:655
+# 		class:gui.representation.OutPort
+# 		radius:30
+# 		width:30
+# 	Port Class:gui.model.port.CoupledPort
+# 	Port UniqueId:150
+# 	Port ID:in_stop_f1
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	location x:100
+# 	location y:355
+# 		class:gui.representation.InPort
+# 		radius:30
+# 		width:30
+# 	Port Class:gui.model.port.CoupledPort
+# 	Port UniqueId:151
+# 	Port ID:in_stop_f2
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	location x:100
+# 	location y:505
+# 		class:gui.representation.InPort
+# 		radius:30
+# 		width:30
+# 	Port Class:gui.model.port.CoupledPort
+# 	Port UniqueId:152
+# 	Port ID:in_stop_f3
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	location x:100
+# 	location y:685
+# 		class:gui.representation.InPort
+# 		radius:30
+# 		width:30
+# Cant Links:44
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:153
+# 	start unit Point:150
+# 	end unit Point:105
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:150
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:107
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:154
+# 	start unit Point:151
+# 	end unit Point:117
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:151
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:119
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:155
+# 	start unit Point:152
+# 	end unit Point:129
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:152
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:131
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:156
+# 	start unit Point:105
+# 	end unit Point:33
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:108
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:54
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:157
+# 	start unit Point:105
+# 	end unit Point:33
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:109
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:53
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:158
+# 	start unit Point:105
+# 	end unit Point:33
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:110
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:55
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:159
+# 	start unit Point:117
+# 	end unit Point:33
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:120
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:54
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:160
+# 	start unit Point:117
+# 	end unit Point:33
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:121
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:53
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:161
+# 	start unit Point:117
+# 	end unit Point:33
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:122
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:55
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:162
+# 	start unit Point:129
+# 	end unit Point:33
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:132
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:54
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:163
+# 	start unit Point:129
+# 	end unit Point:33
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:133
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:53
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:164
+# 	start unit Point:129
+# 	end unit Point:33
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:134
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:55
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:165
+# 	start unit Point:105
+# 	end unit Point:0
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:111
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:21
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:166
+# 	start unit Point:105
+# 	end unit Point:0
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:112
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:20
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:167
+# 	start unit Point:105
+# 	end unit Point:0
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:113
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:22
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:168
+# 	start unit Point:117
+# 	end unit Point:0
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:123
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:21
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:169
+# 	start unit Point:117
+# 	end unit Point:0
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:124
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:20
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:170
+# 	start unit Point:117
+# 	end unit Point:0
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:125
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:22
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:171
+# 	start unit Point:129
+# 	end unit Point:0
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:135
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:21
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:172
+# 	start unit Point:129
+# 	end unit Point:0
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:136
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:20
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:173
+# 	start unit Point:129
+# 	end unit Point:0
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:137
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:22
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:174
+# 	start unit Point:105
+# 	end unit Point:66
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:114
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:91
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:175
+# 	start unit Point:105
+# 	end unit Point:66
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:115
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:90
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:176
+# 	start unit Point:105
+# 	end unit Point:66
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:116
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:92
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:177
+# 	start unit Point:117
+# 	end unit Point:66
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:126
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:91
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:178
+# 	start unit Point:117
+# 	end unit Point:66
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:127
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:90
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:179
+# 	start unit Point:117
+# 	end unit Point:66
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:128
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:92
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:180
+# 	start unit Point:129
+# 	end unit Point:66
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:138
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:91
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:181
+# 	start unit Point:129
+# 	end unit Point:66
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:139
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:90
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:182
+# 	start unit Point:129
+# 	end unit Point:66
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:140
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:92
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:183
+# 	start unit Point:33
+# 	end unit Point:105
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:50
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:106
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:184
+# 	start unit Point:33
+# 	end unit Point:117
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:51
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:118
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:185
+# 	start unit Point:33
+# 	end unit Point:129
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:52
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:130
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:186
+# 	start unit Point:0
+# 	end unit Point:105
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:17
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:106
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:187
+# 	start unit Point:0
+# 	end unit Point:117
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:18
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:118
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:188
+# 	start unit Point:0
+# 	end unit Point:129
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:19
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:130
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:189
+# 	start unit Point:66
+# 	end unit Point:105
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:85
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:106
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:190
+# 	start unit Point:66
+# 	end unit Point:117
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:86
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:118
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:191
+# 	start unit Point:66
+# 	end unit Point:129
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:87
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:130
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:192
+# 	start unit Point:66
+# 	end unit Point:141
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:88
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:143
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:193
+# 	start unit Point:66
+# 	end unit Point:141
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:89
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:142
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:194
+# 	start unit Point:141
+# 	end unit Point:148
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:144
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:148
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:195
+# 	start unit Point:141
+# 	end unit Point:147
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:145
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:147
+# 	Link Type:gui.model.link.CoupledLink
+# 	Link unique Id:196
+# 	start unit Point:141
+# 	end unit Point:149
+# 	Port Class:gui.model.port.AtomicPort
+# 	PortRef:146
+# 	Port Class:gui.model.port.CoupledPort
+# 	PortRef:149

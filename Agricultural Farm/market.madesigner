@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_sgj50cANEeeLaKp4S-TmZQ" modelName="top" defined="true" sourceFileRelativePath="market.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_sgj50sANEeeLaKp4S-TmZQ" portName="out_type" portType="OUTPUT_PORT" incomingLinks="_sgj55sANEeeLaKp4S-TmZQ"/>
+    <ports xmi:type="CoupledPort" xmi:id="_sgj508ANEeeLaKp4S-TmZQ" portName="out_bushels" portType="OUTPUT_PORT" incomingLinks="_sgj558ANEeeLaKp4S-TmZQ"/>
+    <ports xmi:type="CoupledPort" xmi:id="_sgj51MANEeeLaKp4S-TmZQ" portName="out_sales" portType="OUTPUT_PORT" incomingLinks="_sgj56MANEeeLaKp4S-TmZQ"/>
+    <ports xmi:type="CoupledPort" xmi:id="_sgj51cANEeeLaKp4S-TmZQ" portName="in_bushels" outgoingLinks="_sgj55MANEeeLaKp4S-TmZQ"/>
+    <ports xmi:type="CoupledPort" xmi:id="_sgj51sANEeeLaKp4S-TmZQ" portName="in_type" outgoingLinks="_sgj55cANEeeLaKp4S-TmZQ"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_sgj518ANEeeLaKp4S-TmZQ" instanceName="market">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_sgj52MANEeeLaKp4S-TmZQ" modelName="market" defined="true" sourceFileRelativePath="market.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_sgj52cANEeeLaKp4S-TmZQ" portName="in_type" incomingLinks="_sgj55cANEeeLaKp4S-TmZQ"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_sgj52sANEeeLaKp4S-TmZQ" portName="in_bushels" incomingLinks="_sgj55MANEeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_sgj528ANEeeLaKp4S-TmZQ" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_sgj55sANEeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_sgj53MANEeeLaKp4S-TmZQ" portName="out_bushels" portType="OUTPUT_PORT" outgoingLinks="_sgj558ANEeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_sgj53cANEeeLaKp4S-TmZQ" portName="out_sales" portType="OUTPUT_PORT" outgoingLinks="_sgj56MANEeeLaKp4S-TmZQ"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_sgj53sANEeeLaKp4S-TmZQ" name="value_type_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_sgj538ANEeeLaKp4S-TmZQ" name="value_type_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_sgj54MANEeeLaKp4S-TmZQ" name="value_type_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_sgj54cANEeeLaKp4S-TmZQ" name="value_type_1" value="2.5"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_sgj54sANEeeLaKp4S-TmZQ" name="value_type_2" value="3.2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_sgj548ANEeeLaKp4S-TmZQ" name="value_type_3" value="4.1"/>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_sgj55MANEeeLaKp4S-TmZQ" target="_sgj52sANEeeLaKp4S-TmZQ" source="_sgj51cANEeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_sgj55cANEeeLaKp4S-TmZQ" target="_sgj52cANEeeLaKp4S-TmZQ" source="_sgj51sANEeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_sgj55sANEeeLaKp4S-TmZQ" target="_sgj50sANEeeLaKp4S-TmZQ" source="_sgj528ANEeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_sgj558ANEeeLaKp4S-TmZQ" target="_sgj508ANEeeLaKp4S-TmZQ" source="_sgj53MANEeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_sgj56MANEeeLaKp4S-TmZQ" target="_sgj51MANEeeLaKp4S-TmZQ" source="_sgj53cANEeeLaKp4S-TmZQ"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_sgj56cANEeeLaKp4S-TmZQ" type="DEVS" element="_sgj50cANEeeLaKp4S-TmZQ" name="market.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_sgj56sANEeeLaKp4S-TmZQ"/>
+  </notation:Diagram>
+</xmi:XMI>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_J26KvcC8EeehwPC9saMV6A" modelName="top" defined="true" sourceFileRelativePath="Farm.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_J26KvsC8EeehwPC9saMV6A" portName="out_bushels" portType="OUTPUT_PORT" incomingLinks="_J26L1sC8EeehwPC9saMV6A"/>
+    <ports xmi:type="CoupledPort" xmi:id="_J26Kv8C8EeehwPC9saMV6A" portName="out_type" portType="OUTPUT_PORT" incomingLinks="_J26L1cC8EeehwPC9saMV6A"/>
+    <ports xmi:type="CoupledPort" xmi:id="_J26KwMC8EeehwPC9saMV6A" portName="out_sales" portType="OUTPUT_PORT" incomingLinks="_J26L18C8EeehwPC9saMV6A"/>
+    <ports xmi:type="CoupledPort" xmi:id="_J26KwcC8EeehwPC9saMV6A" portName="in_stop_f1" outgoingLinks="_J26LrMC8EeehwPC9saMV6A"/>
+    <ports xmi:type="CoupledPort" xmi:id="_J26KwsC8EeehwPC9saMV6A" portName="in_stop_f2" outgoingLinks="_J26LrcC8EeehwPC9saMV6A"/>
+    <ports xmi:type="CoupledPort" xmi:id="_J26Kw8C8EeehwPC9saMV6A" portName="in_stop_f3" outgoingLinks="_J26LrsC8EeehwPC9saMV6A"/>
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_J26KxMC8EeehwPC9saMV6A" instanceName="sm">
+      <modelType xmi:type="CoupledModelType" xmi:id="_J26KxcC8EeehwPC9saMV6A" modelName="sm">
+        <ports xmi:type="CoupledPort" xmi:id="_J26KxsC8EeehwPC9saMV6A" portName="out_field_1" portType="OUTPUT_PORT" incomingLinks="_J26K58C8EeehwPC9saMV6A" outgoingLinks="_J26LzcC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26Kx8C8EeehwPC9saMV6A" portName="out_field_2" portType="OUTPUT_PORT" incomingLinks="_J26K6MC8EeehwPC9saMV6A" outgoingLinks="_J26LzsC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26KyMC8EeehwPC9saMV6A" portName="out_field_3" portType="OUTPUT_PORT" incomingLinks="_J26K6cC8EeehwPC9saMV6A" outgoingLinks="_J26Lz8C8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26KycC8EeehwPC9saMV6A" portName="in_surface" incomingLinks="_J26LucC8EeehwPC9saMV6A _J26LvMC8EeehwPC9saMV6A _J26Lv8C8EeehwPC9saMV6A" outgoingLinks="_J26K4MC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26KysC8EeehwPC9saMV6A" portName="in_field" incomingLinks="_J26LuMC8EeehwPC9saMV6A _J26Lu8C8EeehwPC9saMV6A _J26LvsC8EeehwPC9saMV6A" outgoingLinks="_J26K4cC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26Ky8C8EeehwPC9saMV6A" portName="in_type" incomingLinks="_J26LusC8EeehwPC9saMV6A _J26LvcC8EeehwPC9saMV6A _J26LwMC8EeehwPC9saMV6A" outgoingLinks="_J26K4sC8EeehwPC9saMV6A"/>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_J26KzMC8EeehwPC9saMV6A" instanceName="que_sm">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_J26KzcC8EeehwPC9saMV6A" modelName="queue" defined="true" sourceFileRelativePath="queue.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26KzsC8EeehwPC9saMV6A" portName="in_done" incomingLinks="_J26K5sC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26Kz8C8EeehwPC9saMV6A" portName="in_surface" incomingLinks="_J26K4MC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26K0MC8EeehwPC9saMV6A" portName="in_field" incomingLinks="_J26K4cC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26K0cC8EeehwPC9saMV6A" portName="in_type" incomingLinks="_J26K4sC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K0sC8EeehwPC9saMV6A" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_J26K48C8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K08C8EeehwPC9saMV6A" portName="out_surface" portType="OUTPUT_PORT" outgoingLinks="_J26K5MC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K1MC8EeehwPC9saMV6A" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_J26K5cC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K1cC8EeehwPC9saMV6A" portName="out_field_1" portType="OUTPUT_PORT" outgoingLinks="_J26K58C8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K1sC8EeehwPC9saMV6A" portName="out_field_2" portType="OUTPUT_PORT" outgoingLinks="_J26K6MC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K18C8EeehwPC9saMV6A" portName="out_field_3" portType="OUTPUT_PORT" outgoingLinks="_J26K6cC8EeehwPC9saMV6A"/>
+          </modelType>
+        </atomicModels>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_J26K2MC8EeehwPC9saMV6A" instanceName="sower">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_J26K2cC8EeehwPC9saMV6A" modelName="sower" defined="true" sourceFileRelativePath="sower.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26K2sC8EeehwPC9saMV6A" portName="in_id" incomingLinks="_J26K48C8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26K28C8EeehwPC9saMV6A" portName="in_surface" incomingLinks="_J26K5MC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26K3MC8EeehwPC9saMV6A" portName="in_type" incomingLinks="_J26K5cC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K3cC8EeehwPC9saMV6A" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_J26K5sC8EeehwPC9saMV6A"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26K3sC8EeehwPC9saMV6A" name="speed"/>
+          </modelType>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26K38C8EeehwPC9saMV6A" name="speed" value="5"/>
+        </atomicModels>
+        <links xmi:type="CoupledLink" xmi:id="_J26K4MC8EeehwPC9saMV6A" target="_J26Kz8C8EeehwPC9saMV6A" source="_J26KycC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26K4cC8EeehwPC9saMV6A" target="_J26K0MC8EeehwPC9saMV6A" source="_J26KysC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26K4sC8EeehwPC9saMV6A" target="_J26K0cC8EeehwPC9saMV6A" source="_J26Ky8C8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26K48C8EeehwPC9saMV6A" target="_J26K2sC8EeehwPC9saMV6A" source="_J26K0sC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26K5MC8EeehwPC9saMV6A" target="_J26K28C8EeehwPC9saMV6A" source="_J26K08C8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26K5cC8EeehwPC9saMV6A" target="_J26K3MC8EeehwPC9saMV6A" source="_J26K1MC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26K5sC8EeehwPC9saMV6A" target="_J26KzsC8EeehwPC9saMV6A" source="_J26K3cC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26K58C8EeehwPC9saMV6A" target="_J26KxsC8EeehwPC9saMV6A" source="_J26K1cC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26K6MC8EeehwPC9saMV6A" target="_J26Kx8C8EeehwPC9saMV6A" source="_J26K1sC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26K6cC8EeehwPC9saMV6A" target="_J26KyMC8EeehwPC9saMV6A" source="_J26K18C8EeehwPC9saMV6A"/>
+      </modelType>
+    </coupledModels>
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_J26K6sC8EeehwPC9saMV6A" instanceName="wm">
+      <modelType xmi:type="CoupledModelType" xmi:id="_J26K68C8EeehwPC9saMV6A" modelName="wm">
+        <ports xmi:type="CoupledPort" xmi:id="_J26K7MC8EeehwPC9saMV6A" portName="out_field_1" portType="OUTPUT_PORT" incomingLinks="_J26LDcC8EeehwPC9saMV6A" outgoingLinks="_J26LysC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26K7cC8EeehwPC9saMV6A" portName="out_field_2" portType="OUTPUT_PORT" incomingLinks="_J26LDsC8EeehwPC9saMV6A" outgoingLinks="_J26Ly8C8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26K7sC8EeehwPC9saMV6A" portName="out_field_3" portType="OUTPUT_PORT" incomingLinks="_J26LD8C8EeehwPC9saMV6A" outgoingLinks="_J26LzMC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26K78C8EeehwPC9saMV6A" portName="in_surface" incomingLinks="_J26LsMC8EeehwPC9saMV6A _J26Ls8C8EeehwPC9saMV6A _J26LtsC8EeehwPC9saMV6A" outgoingLinks="_J26LBsC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26K8MC8EeehwPC9saMV6A" portName="in_field" incomingLinks="_J26Lr8C8EeehwPC9saMV6A _J26LssC8EeehwPC9saMV6A _J26LtcC8EeehwPC9saMV6A" outgoingLinks="_J26LB8C8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26K8cC8EeehwPC9saMV6A" portName="in_type" incomingLinks="_J26LscC8EeehwPC9saMV6A _J26LtMC8EeehwPC9saMV6A _J26Lt8C8EeehwPC9saMV6A" outgoingLinks="_J26LCMC8EeehwPC9saMV6A"/>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_J26K8sC8EeehwPC9saMV6A" instanceName="que_wm">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_J26K88C8EeehwPC9saMV6A" modelName="queue" defined="true" sourceFileRelativePath="queue.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26K9MC8EeehwPC9saMV6A" portName="in_done" incomingLinks="_J26LDMC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26K9cC8EeehwPC9saMV6A" portName="in_surface" incomingLinks="_J26LBsC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26K9sC8EeehwPC9saMV6A" portName="in_field" incomingLinks="_J26LB8C8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26K98C8EeehwPC9saMV6A" portName="in_type" incomingLinks="_J26LCMC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K-MC8EeehwPC9saMV6A" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_J26LCcC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K-cC8EeehwPC9saMV6A" portName="out_surface" portType="OUTPUT_PORT" outgoingLinks="_J26LCsC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K-sC8EeehwPC9saMV6A" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_J26LC8C8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K-8C8EeehwPC9saMV6A" portName="out_field_1" portType="OUTPUT_PORT" outgoingLinks="_J26LDcC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K_MC8EeehwPC9saMV6A" portName="out_field_2" portType="OUTPUT_PORT" outgoingLinks="_J26LDsC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26K_cC8EeehwPC9saMV6A" portName="out_field_3" portType="OUTPUT_PORT" outgoingLinks="_J26LD8C8EeehwPC9saMV6A"/>
+          </modelType>
+        </atomicModels>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_J26K_sC8EeehwPC9saMV6A" instanceName="irrigator">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_J26K_8C8EeehwPC9saMV6A" modelName="irrigation" defined="true" sourceFileRelativePath="irrigation.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26LAMC8EeehwPC9saMV6A" portName="in_id" incomingLinks="_J26LCcC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26LAcC8EeehwPC9saMV6A" portName="in_surface" incomingLinks="_J26LCsC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26LAsC8EeehwPC9saMV6A" portName="in_type" incomingLinks="_J26LC8C8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26LA8C8EeehwPC9saMV6A" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_J26LDMC8EeehwPC9saMV6A"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LBMC8EeehwPC9saMV6A" name="speed"/>
+          </modelType>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LBcC8EeehwPC9saMV6A" name="speed" value="20"/>
+        </atomicModels>
+        <links xmi:type="CoupledLink" xmi:id="_J26LBsC8EeehwPC9saMV6A" target="_J26K9cC8EeehwPC9saMV6A" source="_J26K78C8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LB8C8EeehwPC9saMV6A" target="_J26K9sC8EeehwPC9saMV6A" source="_J26K8MC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LCMC8EeehwPC9saMV6A" target="_J26K98C8EeehwPC9saMV6A" source="_J26K8cC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LCcC8EeehwPC9saMV6A" target="_J26LAMC8EeehwPC9saMV6A" source="_J26K-MC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LCsC8EeehwPC9saMV6A" target="_J26LAcC8EeehwPC9saMV6A" source="_J26K-cC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LC8C8EeehwPC9saMV6A" target="_J26LAsC8EeehwPC9saMV6A" source="_J26K-sC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LDMC8EeehwPC9saMV6A" target="_J26K9MC8EeehwPC9saMV6A" source="_J26LA8C8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LDcC8EeehwPC9saMV6A" target="_J26K7MC8EeehwPC9saMV6A" source="_J26K-8C8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LDsC8EeehwPC9saMV6A" target="_J26K7cC8EeehwPC9saMV6A" source="_J26K_MC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LD8C8EeehwPC9saMV6A" target="_J26K7sC8EeehwPC9saMV6A" source="_J26K_cC8EeehwPC9saMV6A"/>
+      </modelType>
+    </coupledModels>
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_J26LEMC8EeehwPC9saMV6A" instanceName="hm">
+      <modelType xmi:type="CoupledModelType" xmi:id="_J26LEcC8EeehwPC9saMV6A" modelName="hm">
+        <ports xmi:type="CoupledPort" xmi:id="_J26LEsC8EeehwPC9saMV6A" portName="out_field_1" portType="OUTPUT_PORT" incomingLinks="_J26LPcC8EeehwPC9saMV6A" outgoingLinks="_J26L0MC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26LE8C8EeehwPC9saMV6A" portName="out_field_2" portType="OUTPUT_PORT" incomingLinks="_J26LPsC8EeehwPC9saMV6A" outgoingLinks="_J26L0cC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26LFMC8EeehwPC9saMV6A" portName="out_field_3" portType="OUTPUT_PORT" incomingLinks="_J26LP8C8EeehwPC9saMV6A" outgoingLinks="_J26L0sC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26LFcC8EeehwPC9saMV6A" portName="out_bushels" portType="OUTPUT_PORT" incomingLinks="_J26LQMC8EeehwPC9saMV6A" outgoingLinks="_J26L08C8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26LFsC8EeehwPC9saMV6A" portName="out_type" portType="OUTPUT_PORT" incomingLinks="_J26LQcC8EeehwPC9saMV6A" outgoingLinks="_J26L1MC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26LF8C8EeehwPC9saMV6A" portName="in_surface" incomingLinks="_J26LwsC8EeehwPC9saMV6A _J26LxcC8EeehwPC9saMV6A _J26LyMC8EeehwPC9saMV6A" outgoingLinks="_J26LNsC8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26LGMC8EeehwPC9saMV6A" portName="in_field" incomingLinks="_J26LwcC8EeehwPC9saMV6A _J26LxMC8EeehwPC9saMV6A _J26Lx8C8EeehwPC9saMV6A" outgoingLinks="_J26LN8C8EeehwPC9saMV6A"/>
+        <ports xmi:type="CoupledPort" xmi:id="_J26LGcC8EeehwPC9saMV6A" portName="in_type" incomingLinks="_J26Lw8C8EeehwPC9saMV6A _J26LxsC8EeehwPC9saMV6A _J26LycC8EeehwPC9saMV6A" outgoingLinks="_J26LOMC8EeehwPC9saMV6A"/>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_J26LGsC8EeehwPC9saMV6A" instanceName="que_hm">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_J26LG8C8EeehwPC9saMV6A" modelName="queue" defined="true" sourceFileRelativePath="queue.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26LHMC8EeehwPC9saMV6A" portName="in_done" incomingLinks="_J26LPMC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26LHcC8EeehwPC9saMV6A" portName="in_surface" incomingLinks="_J26LNsC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26LHsC8EeehwPC9saMV6A" portName="in_field" incomingLinks="_J26LN8C8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26LH8C8EeehwPC9saMV6A" portName="in_type" incomingLinks="_J26LOMC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26LIMC8EeehwPC9saMV6A" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_J26LOcC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26LIcC8EeehwPC9saMV6A" portName="out_surface" portType="OUTPUT_PORT" outgoingLinks="_J26LOsC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26LIsC8EeehwPC9saMV6A" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_J26LO8C8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26LI8C8EeehwPC9saMV6A" portName="out_field_1" portType="OUTPUT_PORT" outgoingLinks="_J26LPcC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26LJMC8EeehwPC9saMV6A" portName="out_field_2" portType="OUTPUT_PORT" outgoingLinks="_J26LPsC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26LJcC8EeehwPC9saMV6A" portName="out_field_3" portType="OUTPUT_PORT" outgoingLinks="_J26LP8C8EeehwPC9saMV6A"/>
+          </modelType>
+        </atomicModels>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_J26LJsC8EeehwPC9saMV6A" instanceName="harvester">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_J26LJ8C8EeehwPC9saMV6A" modelName="harvester" defined="true" sourceFileRelativePath="harvester.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26LKMC8EeehwPC9saMV6A" portName="in_id" incomingLinks="_J26LOcC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26LKcC8EeehwPC9saMV6A" portName="in_surface" incomingLinks="_J26LOsC8EeehwPC9saMV6A"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_J26LKsC8EeehwPC9saMV6A" portName="in_type" incomingLinks="_J26LO8C8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26LK8C8EeehwPC9saMV6A" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_J26LPMC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26LLMC8EeehwPC9saMV6A" portName="out_bushels" portType="OUTPUT_PORT" outgoingLinks="_J26LQMC8EeehwPC9saMV6A"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_J26LLcC8EeehwPC9saMV6A" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_J26LQcC8EeehwPC9saMV6A"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LLsC8EeehwPC9saMV6A" name="speed"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LL8C8EeehwPC9saMV6A" name="yield_type_1"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LMMC8EeehwPC9saMV6A" name="yield_type_2"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LMcC8EeehwPC9saMV6A" name="yield_type_3"/>
+          </modelType>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LMsC8EeehwPC9saMV6A" name="speed" value="5"/>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LM8C8EeehwPC9saMV6A" name="yield_type_1" value="150"/>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LNMC8EeehwPC9saMV6A" name="yield_type_2" value="120"/>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LNcC8EeehwPC9saMV6A" name="yield_type_3" value="170"/>
+        </atomicModels>
+        <links xmi:type="CoupledLink" xmi:id="_J26LNsC8EeehwPC9saMV6A" target="_J26LHcC8EeehwPC9saMV6A" source="_J26LF8C8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LN8C8EeehwPC9saMV6A" target="_J26LHsC8EeehwPC9saMV6A" source="_J26LGMC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LOMC8EeehwPC9saMV6A" target="_J26LH8C8EeehwPC9saMV6A" source="_J26LGcC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LOcC8EeehwPC9saMV6A" target="_J26LKMC8EeehwPC9saMV6A" source="_J26LIMC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LOsC8EeehwPC9saMV6A" target="_J26LKcC8EeehwPC9saMV6A" source="_J26LIcC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LO8C8EeehwPC9saMV6A" target="_J26LKsC8EeehwPC9saMV6A" source="_J26LIsC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LPMC8EeehwPC9saMV6A" target="_J26LHMC8EeehwPC9saMV6A" source="_J26LK8C8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LPcC8EeehwPC9saMV6A" target="_J26LEsC8EeehwPC9saMV6A" source="_J26LI8C8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LPsC8EeehwPC9saMV6A" target="_J26LE8C8EeehwPC9saMV6A" source="_J26LJMC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LP8C8EeehwPC9saMV6A" target="_J26LFMC8EeehwPC9saMV6A" source="_J26LJcC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LQMC8EeehwPC9saMV6A" target="_J26LFcC8EeehwPC9saMV6A" source="_J26LLMC8EeehwPC9saMV6A"/>
+        <links xmi:type="CoupledLink" xmi:id="_J26LQcC8EeehwPC9saMV6A" target="_J26LFsC8EeehwPC9saMV6A" source="_J26LLcC8EeehwPC9saMV6A"/>
+      </modelType>
+    </coupledModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_J26LQsC8EeehwPC9saMV6A" instanceName="f1">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_J26LQ8C8EeehwPC9saMV6A" modelName="field" defined="true" sourceFileRelativePath="field.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_J26LRMC8EeehwPC9saMV6A" portName="in_done" incomingLinks="_J26LysC8EeehwPC9saMV6A _J26LzcC8EeehwPC9saMV6A _J26L0MC8EeehwPC9saMV6A"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_J26LRcC8EeehwPC9saMV6A" portName="in_stop" incomingLinks="_J26LrMC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LRsC8EeehwPC9saMV6A" portName="out_water_field" portType="OUTPUT_PORT" outgoingLinks="_J26Lr8C8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LR8C8EeehwPC9saMV6A" portName="out_water_surface" portType="OUTPUT_PORT" outgoingLinks="_J26LsMC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LSMC8EeehwPC9saMV6A" portName="out_water_type" portType="OUTPUT_PORT" outgoingLinks="_J26LscC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LScC8EeehwPC9saMV6A" portName="out_sower_field" portType="OUTPUT_PORT" outgoingLinks="_J26LuMC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LSsC8EeehwPC9saMV6A" portName="out_sower_surface" portType="OUTPUT_PORT" outgoingLinks="_J26LucC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LS8C8EeehwPC9saMV6A" portName="out_sower_type" portType="OUTPUT_PORT" outgoingLinks="_J26LusC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LTMC8EeehwPC9saMV6A" portName="out_harvest_field" portType="OUTPUT_PORT" outgoingLinks="_J26LwcC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LTcC8EeehwPC9saMV6A" portName="out_harvest_surface" portType="OUTPUT_PORT" outgoingLinks="_J26LwsC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LTsC8EeehwPC9saMV6A" portName="out_harvest_type" portType="OUTPUT_PORT" outgoingLinks="_J26Lw8C8EeehwPC9saMV6A"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LT8C8EeehwPC9saMV6A" name="surface"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LUMC8EeehwPC9saMV6A" name="type"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LUcC8EeehwPC9saMV6A" name="id"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LUsC8EeehwPC9saMV6A" name="growth_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LU8C8EeehwPC9saMV6A" name="growth_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LVMC8EeehwPC9saMV6A" name="growth_rate_3"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LVcC8EeehwPC9saMV6A" name="evaporation_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LVsC8EeehwPC9saMV6A" name="evaporation_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LV8C8EeehwPC9saMV6A" name="evaporation_rate_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LWMC8EeehwPC9saMV6A" name="surface" value="100"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LWcC8EeehwPC9saMV6A" name="type" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LWsC8EeehwPC9saMV6A" name="id" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LW8C8EeehwPC9saMV6A" name="growth_rate_1" value="50"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LXMC8EeehwPC9saMV6A" name="growth_rate_2" value="40"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LXcC8EeehwPC9saMV6A" name="growth_rate_3" value="60"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LXsC8EeehwPC9saMV6A" name="evaporation_rate_1" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LX8C8EeehwPC9saMV6A" name="evaporation_rate_2" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LYMC8EeehwPC9saMV6A" name="evaporation_rate_3" value="3"/>
+    </atomicModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_J26LYcC8EeehwPC9saMV6A" instanceName="f2">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_J26LYsC8EeehwPC9saMV6A" modelName="field" defined="true" sourceFileRelativePath="field.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_J26LY8C8EeehwPC9saMV6A" portName="in_done" incomingLinks="_J26Ly8C8EeehwPC9saMV6A _J26LzsC8EeehwPC9saMV6A _J26L0cC8EeehwPC9saMV6A"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_J26LZMC8EeehwPC9saMV6A" portName="in_stop" incomingLinks="_J26LrcC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LZcC8EeehwPC9saMV6A" portName="out_water_field" portType="OUTPUT_PORT" outgoingLinks="_J26LssC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LZsC8EeehwPC9saMV6A" portName="out_water_surface" portType="OUTPUT_PORT" outgoingLinks="_J26Ls8C8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LZ8C8EeehwPC9saMV6A" portName="out_water_type" portType="OUTPUT_PORT" outgoingLinks="_J26LtMC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LaMC8EeehwPC9saMV6A" portName="out_sower_field" portType="OUTPUT_PORT" outgoingLinks="_J26Lu8C8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LacC8EeehwPC9saMV6A" portName="out_sower_surface" portType="OUTPUT_PORT" outgoingLinks="_J26LvMC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LasC8EeehwPC9saMV6A" portName="out_sower_type" portType="OUTPUT_PORT" outgoingLinks="_J26LvcC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26La8C8EeehwPC9saMV6A" portName="out_harvest_field" portType="OUTPUT_PORT" outgoingLinks="_J26LxMC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LbMC8EeehwPC9saMV6A" portName="out_harvest_surface" portType="OUTPUT_PORT" outgoingLinks="_J26LxcC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LbcC8EeehwPC9saMV6A" portName="out_harvest_type" portType="OUTPUT_PORT" outgoingLinks="_J26LxsC8EeehwPC9saMV6A"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LbsC8EeehwPC9saMV6A" name="surface"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26Lb8C8EeehwPC9saMV6A" name="type"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LcMC8EeehwPC9saMV6A" name="id"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LccC8EeehwPC9saMV6A" name="growth_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LcsC8EeehwPC9saMV6A" name="growth_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26Lc8C8EeehwPC9saMV6A" name="growth_rate_3"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LdMC8EeehwPC9saMV6A" name="evaporation_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LdcC8EeehwPC9saMV6A" name="evaporation_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LdsC8EeehwPC9saMV6A" name="evaporation_rate_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26Ld8C8EeehwPC9saMV6A" name="surface" value="200"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LeMC8EeehwPC9saMV6A" name="type" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LecC8EeehwPC9saMV6A" name="id" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LesC8EeehwPC9saMV6A" name="growth_rate_1" value="50"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26Le8C8EeehwPC9saMV6A" name="growth_rate_2" value="40"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LfMC8EeehwPC9saMV6A" name="growth_rate_3" value="60"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LfcC8EeehwPC9saMV6A" name="evaporation_rate_1" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LfsC8EeehwPC9saMV6A" name="evaporation_rate_2" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26Lf8C8EeehwPC9saMV6A" name="evaporation_rate_3" value="3"/>
+    </atomicModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_J26LgMC8EeehwPC9saMV6A" instanceName="f3">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_J26LgcC8EeehwPC9saMV6A" modelName="field" defined="true" sourceFileRelativePath="field.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_J26LgsC8EeehwPC9saMV6A" portName="in_done" incomingLinks="_J26LzMC8EeehwPC9saMV6A _J26Lz8C8EeehwPC9saMV6A _J26L0sC8EeehwPC9saMV6A"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_J26Lg8C8EeehwPC9saMV6A" portName="in_stop" incomingLinks="_J26LrsC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LhMC8EeehwPC9saMV6A" portName="out_water_field" portType="OUTPUT_PORT" outgoingLinks="_J26LtcC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LhcC8EeehwPC9saMV6A" portName="out_water_surface" portType="OUTPUT_PORT" outgoingLinks="_J26LtsC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LhsC8EeehwPC9saMV6A" portName="out_water_type" portType="OUTPUT_PORT" outgoingLinks="_J26Lt8C8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26Lh8C8EeehwPC9saMV6A" portName="out_sower_field" portType="OUTPUT_PORT" outgoingLinks="_J26LvsC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LiMC8EeehwPC9saMV6A" portName="out_sower_surface" portType="OUTPUT_PORT" outgoingLinks="_J26Lv8C8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LicC8EeehwPC9saMV6A" portName="out_sower_type" portType="OUTPUT_PORT" outgoingLinks="_J26LwMC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LisC8EeehwPC9saMV6A" portName="out_harvest_field" portType="OUTPUT_PORT" outgoingLinks="_J26Lx8C8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26Li8C8EeehwPC9saMV6A" portName="out_harvest_surface" portType="OUTPUT_PORT" outgoingLinks="_J26LyMC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LjMC8EeehwPC9saMV6A" portName="out_harvest_type" portType="OUTPUT_PORT" outgoingLinks="_J26LycC8EeehwPC9saMV6A"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LjcC8EeehwPC9saMV6A" name="surface"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LjsC8EeehwPC9saMV6A" name="type"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26Lj8C8EeehwPC9saMV6A" name="id"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LkMC8EeehwPC9saMV6A" name="growth_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LkcC8EeehwPC9saMV6A" name="growth_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LksC8EeehwPC9saMV6A" name="growth_rate_3"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26Lk8C8EeehwPC9saMV6A" name="evaporation_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LlMC8EeehwPC9saMV6A" name="evaporation_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LlcC8EeehwPC9saMV6A" name="evaporation_rate_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LlsC8EeehwPC9saMV6A" name="surface" value="300"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26Ll8C8EeehwPC9saMV6A" name="type" value="3"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LmMC8EeehwPC9saMV6A" name="id" value="3"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LmcC8EeehwPC9saMV6A" name="growth_rate_1" value="50"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LmsC8EeehwPC9saMV6A" name="growth_rate_2" value="40"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26Lm8C8EeehwPC9saMV6A" name="growth_rate_3" value="60"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LnMC8EeehwPC9saMV6A" name="evaporation_rate_1" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LncC8EeehwPC9saMV6A" name="evaporation_rate_2" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LnsC8EeehwPC9saMV6A" name="evaporation_rate_3" value="3"/>
+    </atomicModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_J26Ln8C8EeehwPC9saMV6A" instanceName="market">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_J26LoMC8EeehwPC9saMV6A" modelName="market" defined="true" sourceFileRelativePath="market.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_J26LocC8EeehwPC9saMV6A" portName="in_type" incomingLinks="_J26L1MC8EeehwPC9saMV6A"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_J26LosC8EeehwPC9saMV6A" portName="in_bushels" incomingLinks="_J26L08C8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26Lo8C8EeehwPC9saMV6A" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_J26L1cC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LpMC8EeehwPC9saMV6A" portName="out_bushels" portType="OUTPUT_PORT" outgoingLinks="_J26L1sC8EeehwPC9saMV6A"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_J26LpcC8EeehwPC9saMV6A" portName="out_sales" portType="OUTPUT_PORT" outgoingLinks="_J26L18C8EeehwPC9saMV6A"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LpsC8EeehwPC9saMV6A" name="value_type_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26Lp8C8EeehwPC9saMV6A" name="value_type_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_J26LqMC8EeehwPC9saMV6A" name="value_type_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LqcC8EeehwPC9saMV6A" name="value_type_1" value="2.5"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26LqsC8EeehwPC9saMV6A" name="value_type_2" value="3.2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_J26Lq8C8EeehwPC9saMV6A" name="value_type_3" value="4.1"/>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_J26LrMC8EeehwPC9saMV6A" target="_J26LRcC8EeehwPC9saMV6A" source="_J26KwcC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LrcC8EeehwPC9saMV6A" target="_J26LZMC8EeehwPC9saMV6A" source="_J26KwsC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LrsC8EeehwPC9saMV6A" target="_J26Lg8C8EeehwPC9saMV6A" source="_J26Kw8C8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26Lr8C8EeehwPC9saMV6A" target="_J26K8MC8EeehwPC9saMV6A" source="_J26LRsC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LsMC8EeehwPC9saMV6A" target="_J26K78C8EeehwPC9saMV6A" source="_J26LR8C8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LscC8EeehwPC9saMV6A" target="_J26K8cC8EeehwPC9saMV6A" source="_J26LSMC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LssC8EeehwPC9saMV6A" target="_J26K8MC8EeehwPC9saMV6A" source="_J26LZcC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26Ls8C8EeehwPC9saMV6A" target="_J26K78C8EeehwPC9saMV6A" source="_J26LZsC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LtMC8EeehwPC9saMV6A" target="_J26K8cC8EeehwPC9saMV6A" source="_J26LZ8C8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LtcC8EeehwPC9saMV6A" target="_J26K8MC8EeehwPC9saMV6A" source="_J26LhMC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LtsC8EeehwPC9saMV6A" target="_J26K78C8EeehwPC9saMV6A" source="_J26LhcC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26Lt8C8EeehwPC9saMV6A" target="_J26K8cC8EeehwPC9saMV6A" source="_J26LhsC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LuMC8EeehwPC9saMV6A" target="_J26KysC8EeehwPC9saMV6A" source="_J26LScC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LucC8EeehwPC9saMV6A" target="_J26KycC8EeehwPC9saMV6A" source="_J26LSsC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LusC8EeehwPC9saMV6A" target="_J26Ky8C8EeehwPC9saMV6A" source="_J26LS8C8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26Lu8C8EeehwPC9saMV6A" target="_J26KysC8EeehwPC9saMV6A" source="_J26LaMC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LvMC8EeehwPC9saMV6A" target="_J26KycC8EeehwPC9saMV6A" source="_J26LacC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LvcC8EeehwPC9saMV6A" target="_J26Ky8C8EeehwPC9saMV6A" source="_J26LasC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LvsC8EeehwPC9saMV6A" target="_J26KysC8EeehwPC9saMV6A" source="_J26Lh8C8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26Lv8C8EeehwPC9saMV6A" target="_J26KycC8EeehwPC9saMV6A" source="_J26LiMC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LwMC8EeehwPC9saMV6A" target="_J26Ky8C8EeehwPC9saMV6A" source="_J26LicC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LwcC8EeehwPC9saMV6A" target="_J26LGMC8EeehwPC9saMV6A" source="_J26LTMC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LwsC8EeehwPC9saMV6A" target="_J26LF8C8EeehwPC9saMV6A" source="_J26LTcC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26Lw8C8EeehwPC9saMV6A" target="_J26LGcC8EeehwPC9saMV6A" source="_J26LTsC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LxMC8EeehwPC9saMV6A" target="_J26LGMC8EeehwPC9saMV6A" source="_J26La8C8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LxcC8EeehwPC9saMV6A" target="_J26LF8C8EeehwPC9saMV6A" source="_J26LbMC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LxsC8EeehwPC9saMV6A" target="_J26LGcC8EeehwPC9saMV6A" source="_J26LbcC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26Lx8C8EeehwPC9saMV6A" target="_J26LGMC8EeehwPC9saMV6A" source="_J26LisC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LyMC8EeehwPC9saMV6A" target="_J26LF8C8EeehwPC9saMV6A" source="_J26Li8C8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LycC8EeehwPC9saMV6A" target="_J26LGcC8EeehwPC9saMV6A" source="_J26LjMC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LysC8EeehwPC9saMV6A" target="_J26LRMC8EeehwPC9saMV6A" source="_J26K7MC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26Ly8C8EeehwPC9saMV6A" target="_J26LY8C8EeehwPC9saMV6A" source="_J26K7cC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LzMC8EeehwPC9saMV6A" target="_J26LgsC8EeehwPC9saMV6A" source="_J26K7sC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LzcC8EeehwPC9saMV6A" target="_J26LRMC8EeehwPC9saMV6A" source="_J26KxsC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26LzsC8EeehwPC9saMV6A" target="_J26LY8C8EeehwPC9saMV6A" source="_J26Kx8C8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26Lz8C8EeehwPC9saMV6A" target="_J26LgsC8EeehwPC9saMV6A" source="_J26KyMC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26L0MC8EeehwPC9saMV6A" target="_J26LRMC8EeehwPC9saMV6A" source="_J26LEsC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26L0cC8EeehwPC9saMV6A" target="_J26LY8C8EeehwPC9saMV6A" source="_J26LE8C8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26L0sC8EeehwPC9saMV6A" target="_J26LgsC8EeehwPC9saMV6A" source="_J26LFMC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26L08C8EeehwPC9saMV6A" target="_J26LosC8EeehwPC9saMV6A" source="_J26LFcC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26L1MC8EeehwPC9saMV6A" target="_J26LocC8EeehwPC9saMV6A" source="_J26LFsC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26L1cC8EeehwPC9saMV6A" target="_J26Kv8C8EeehwPC9saMV6A" source="_J26Lo8C8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26L1sC8EeehwPC9saMV6A" target="_J26KvsC8EeehwPC9saMV6A" source="_J26LpMC8EeehwPC9saMV6A"/>
+    <links xmi:type="CoupledLink" xmi:id="_J26L18C8EeehwPC9saMV6A" target="_J26KwMC8EeehwPC9saMV6A" source="_J26LpcC8EeehwPC9saMV6A"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_J26L2MC8EeehwPC9saMV6A" type="DEVS" element="_J26KvcC8EeehwPC9saMV6A" name="Farm.madesigner" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_S9ZyIMDdEeehwPC9saMV6A" type="2001" element="_J26KxMC8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyI8DdEeehwPC9saMV6A" type="5004"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_S9ZyIcDdEeehwPC9saMV6A" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyIsDdEeehwPC9saMV6A" x="705" y="495"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZyJMDdEeehwPC9saMV6A" type="2001" element="_J26K6sC8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyJ8DdEeehwPC9saMV6A" type="5004"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_S9ZyJcDdEeehwPC9saMV6A" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyJsDdEeehwPC9saMV6A" x="705" y="345"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZyKMDdEeehwPC9saMV6A" type="2001" element="_J26LEMC8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyK8DdEeehwPC9saMV6A" type="5004"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_S9ZyKcDdEeehwPC9saMV6A" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyKsDdEeehwPC9saMV6A" x="705" y="645"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZyLMDdEeehwPC9saMV6A" type="2002" element="_J26KvsC8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyMcDdEeehwPC9saMV6A" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_S9ZyLcDdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_S9ZyLsDdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_S9ZyL8DdEeehwPC9saMV6A"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyMMDdEeehwPC9saMV6A" x="1455" y="675"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZyMsDdEeehwPC9saMV6A" type="2002" element="_J26Kv8C8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyN8DdEeehwPC9saMV6A" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_S9ZyM8DdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_S9ZyNMDdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_S9ZyNcDdEeehwPC9saMV6A"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyNsDdEeehwPC9saMV6A" x="1455" y="750"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZyOMDdEeehwPC9saMV6A" type="2002" element="_J26KwMC8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyPcDdEeehwPC9saMV6A" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_S9ZyOcDdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_S9ZyOsDdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_S9ZyO8DdEeehwPC9saMV6A"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyPMDdEeehwPC9saMV6A" x="1455" y="615"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZyPsDdEeehwPC9saMV6A" type="2002" element="_J26KwcC8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyQ8DdEeehwPC9saMV6A" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_S9ZyP8DdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_S9ZyQMDdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_S9ZyQcDdEeehwPC9saMV6A"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyQsDdEeehwPC9saMV6A" x="60" y="315"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZyRMDdEeehwPC9saMV6A" type="2002" element="_J26KwsC8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyScDdEeehwPC9saMV6A" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_S9ZyRcDdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_S9ZyRsDdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_S9ZyR8DdEeehwPC9saMV6A"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZySMDdEeehwPC9saMV6A" x="60" y="465"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZySsDdEeehwPC9saMV6A" type="2002" element="_J26Kw8C8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyT8DdEeehwPC9saMV6A" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_S9ZyS8DdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_S9ZyTMDdEeehwPC9saMV6A"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_S9ZyTcDdEeehwPC9saMV6A"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyTsDdEeehwPC9saMV6A" x="60" y="645"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZyUMDdEeehwPC9saMV6A" type="2003" element="_J26LQsC8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyU8DdEeehwPC9saMV6A" type="5007"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_S9ZyUcDdEeehwPC9saMV6A" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyUsDdEeehwPC9saMV6A" x="255" y="330"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZyVMDdEeehwPC9saMV6A" type="2003" element="_J26LYcC8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyV8DdEeehwPC9saMV6A" type="5007"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_S9ZyVcDdEeehwPC9saMV6A" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyVsDdEeehwPC9saMV6A" x="255" y="465"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZyWMDdEeehwPC9saMV6A" type="2003" element="_J26LgMC8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyW8DdEeehwPC9saMV6A" type="5007"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_S9ZyWcDdEeehwPC9saMV6A" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyWsDdEeehwPC9saMV6A" x="255" y="630"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_S9ZyXMDdEeehwPC9saMV6A" type="2003" element="_J26Ln8C8EeehwPC9saMV6A">
+      <children xmi:type="notation:Node" xmi:id="_S9ZyX8DdEeehwPC9saMV6A" type="5007"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_S9ZyXcDdEeehwPC9saMV6A" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9ZyXsDdEeehwPC9saMV6A" x="1035" y="645"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_J26L2cC8EeehwPC9saMV6A"/>
+  </notation:Diagram>
+</xmi:XMI>

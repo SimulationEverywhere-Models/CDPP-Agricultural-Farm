@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_BupOHMBDEeeYn_dSdxPM_g" modelName="top" defined="true" sourceFileRelativePath="Farm_Big_Fast.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_BupOHcBDEeeYn_dSdxPM_g" portName="out_bushels" portType="OUTPUT_PORT" incomingLinks="_BupPNcBDEeeYn_dSdxPM_g"/>
+    <ports xmi:type="CoupledPort" xmi:id="_BupOHsBDEeeYn_dSdxPM_g" portName="out_type" portType="OUTPUT_PORT" incomingLinks="_BupPNMBDEeeYn_dSdxPM_g"/>
+    <ports xmi:type="CoupledPort" xmi:id="_BupOH8BDEeeYn_dSdxPM_g" portName="out_sales" portType="OUTPUT_PORT" incomingLinks="_BupPNsBDEeeYn_dSdxPM_g"/>
+    <ports xmi:type="CoupledPort" xmi:id="_BupOIMBDEeeYn_dSdxPM_g" portName="in_stop_f1" outgoingLinks="_BupPC8BDEeeYn_dSdxPM_g"/>
+    <ports xmi:type="CoupledPort" xmi:id="_BupOIcBDEeeYn_dSdxPM_g" portName="in_stop_f2" outgoingLinks="_BupPDMBDEeeYn_dSdxPM_g"/>
+    <ports xmi:type="CoupledPort" xmi:id="_BupOIsBDEeeYn_dSdxPM_g" portName="in_stop_f3" outgoingLinks="_BupPDcBDEeeYn_dSdxPM_g"/>
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_BupOI8BDEeeYn_dSdxPM_g" instanceName="sm">
+      <modelType xmi:type="CoupledModelType" xmi:id="_BupOJMBDEeeYn_dSdxPM_g" modelName="sm">
+        <ports xmi:type="CoupledPort" xmi:id="_BupOJcBDEeeYn_dSdxPM_g" portName="out_field_1" portType="OUTPUT_PORT" incomingLinks="_BupORsBDEeeYn_dSdxPM_g" outgoingLinks="_BupPLMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOJsBDEeeYn_dSdxPM_g" portName="out_field_2" portType="OUTPUT_PORT" incomingLinks="_BupOR8BDEeeYn_dSdxPM_g" outgoingLinks="_BupPLcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOJ8BDEeeYn_dSdxPM_g" portName="out_field_3" portType="OUTPUT_PORT" incomingLinks="_BupOSMBDEeeYn_dSdxPM_g" outgoingLinks="_BupPLsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOKMBDEeeYn_dSdxPM_g" portName="in_surface" incomingLinks="_BupPGMBDEeeYn_dSdxPM_g _BupPG8BDEeeYn_dSdxPM_g _BupPHsBDEeeYn_dSdxPM_g" outgoingLinks="_BupOP8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOKcBDEeeYn_dSdxPM_g" portName="in_field" incomingLinks="_BupPF8BDEeeYn_dSdxPM_g _BupPGsBDEeeYn_dSdxPM_g _BupPHcBDEeeYn_dSdxPM_g" outgoingLinks="_BupOQMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOKsBDEeeYn_dSdxPM_g" portName="in_type" incomingLinks="_BupPGcBDEeeYn_dSdxPM_g _BupPHMBDEeeYn_dSdxPM_g _BupPH8BDEeeYn_dSdxPM_g" outgoingLinks="_BupOQcBDEeeYn_dSdxPM_g"/>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_BupOK8BDEeeYn_dSdxPM_g" instanceName="que_sm">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_BupOLMBDEeeYn_dSdxPM_g" modelName="queue" defined="true" sourceFileRelativePath="queue.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOLcBDEeeYn_dSdxPM_g" portName="in_done" incomingLinks="_BupORcBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOLsBDEeeYn_dSdxPM_g" portName="in_surface" incomingLinks="_BupOP8BDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOL8BDEeeYn_dSdxPM_g" portName="in_field" incomingLinks="_BupOQMBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOMMBDEeeYn_dSdxPM_g" portName="in_type" incomingLinks="_BupOQcBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOMcBDEeeYn_dSdxPM_g" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_BupOQsBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOMsBDEeeYn_dSdxPM_g" portName="out_surface" portType="OUTPUT_PORT" outgoingLinks="_BupOQ8BDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOM8BDEeeYn_dSdxPM_g" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_BupORMBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupONMBDEeeYn_dSdxPM_g" portName="out_field_1" portType="OUTPUT_PORT" outgoingLinks="_BupORsBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupONcBDEeeYn_dSdxPM_g" portName="out_field_2" portType="OUTPUT_PORT" outgoingLinks="_BupOR8BDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupONsBDEeeYn_dSdxPM_g" portName="out_field_3" portType="OUTPUT_PORT" outgoingLinks="_BupOSMBDEeeYn_dSdxPM_g"/>
+          </modelType>
+        </atomicModels>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_BupON8BDEeeYn_dSdxPM_g" instanceName="sower">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_BupOOMBDEeeYn_dSdxPM_g" modelName="sower" defined="true" sourceFileRelativePath="sower.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOOcBDEeeYn_dSdxPM_g" portName="in_id" incomingLinks="_BupOQsBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOOsBDEeeYn_dSdxPM_g" portName="in_surface" incomingLinks="_BupOQ8BDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOO8BDEeeYn_dSdxPM_g" portName="in_type" incomingLinks="_BupORMBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOPMBDEeeYn_dSdxPM_g" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_BupORcBDEeeYn_dSdxPM_g"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOPcBDEeeYn_dSdxPM_g" name="speed"/>
+          </modelType>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOPsBDEeeYn_dSdxPM_g" name="speed" value="20"/>
+        </atomicModels>
+        <links xmi:type="CoupledLink" xmi:id="_BupOP8BDEeeYn_dSdxPM_g" target="_BupOLsBDEeeYn_dSdxPM_g" source="_BupOKMBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOQMBDEeeYn_dSdxPM_g" target="_BupOL8BDEeeYn_dSdxPM_g" source="_BupOKcBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOQcBDEeeYn_dSdxPM_g" target="_BupOMMBDEeeYn_dSdxPM_g" source="_BupOKsBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOQsBDEeeYn_dSdxPM_g" target="_BupOOcBDEeeYn_dSdxPM_g" source="_BupOMcBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOQ8BDEeeYn_dSdxPM_g" target="_BupOOsBDEeeYn_dSdxPM_g" source="_BupOMsBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupORMBDEeeYn_dSdxPM_g" target="_BupOO8BDEeeYn_dSdxPM_g" source="_BupOM8BDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupORcBDEeeYn_dSdxPM_g" target="_BupOLcBDEeeYn_dSdxPM_g" source="_BupOPMBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupORsBDEeeYn_dSdxPM_g" target="_BupOJcBDEeeYn_dSdxPM_g" source="_BupONMBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOR8BDEeeYn_dSdxPM_g" target="_BupOJsBDEeeYn_dSdxPM_g" source="_BupONcBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOSMBDEeeYn_dSdxPM_g" target="_BupOJ8BDEeeYn_dSdxPM_g" source="_BupONsBDEeeYn_dSdxPM_g"/>
+      </modelType>
+    </coupledModels>
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_BupOScBDEeeYn_dSdxPM_g" instanceName="wm">
+      <modelType xmi:type="CoupledModelType" xmi:id="_BupOSsBDEeeYn_dSdxPM_g" modelName="wm">
+        <ports xmi:type="CoupledPort" xmi:id="_BupOS8BDEeeYn_dSdxPM_g" portName="out_field_1" portType="OUTPUT_PORT" incomingLinks="_BupObMBDEeeYn_dSdxPM_g" outgoingLinks="_BupPKcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOTMBDEeeYn_dSdxPM_g" portName="out_field_2" portType="OUTPUT_PORT" incomingLinks="_BupObcBDEeeYn_dSdxPM_g" outgoingLinks="_BupPKsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOTcBDEeeYn_dSdxPM_g" portName="out_field_3" portType="OUTPUT_PORT" incomingLinks="_BupObsBDEeeYn_dSdxPM_g" outgoingLinks="_BupPK8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOTsBDEeeYn_dSdxPM_g" portName="in_surface" incomingLinks="_BupPD8BDEeeYn_dSdxPM_g _BupPEsBDEeeYn_dSdxPM_g _BupPFcBDEeeYn_dSdxPM_g" outgoingLinks="_BupOZcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOT8BDEeeYn_dSdxPM_g" portName="in_field" incomingLinks="_BupPDsBDEeeYn_dSdxPM_g _BupPEcBDEeeYn_dSdxPM_g _BupPFMBDEeeYn_dSdxPM_g" outgoingLinks="_BupOZsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOUMBDEeeYn_dSdxPM_g" portName="in_type" incomingLinks="_BupPEMBDEeeYn_dSdxPM_g _BupPE8BDEeeYn_dSdxPM_g _BupPFsBDEeeYn_dSdxPM_g" outgoingLinks="_BupOZ8BDEeeYn_dSdxPM_g"/>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_BupOUcBDEeeYn_dSdxPM_g" instanceName="que_wm">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_BupOUsBDEeeYn_dSdxPM_g" modelName="queue" defined="true" sourceFileRelativePath="queue.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOU8BDEeeYn_dSdxPM_g" portName="in_done" incomingLinks="_BupOa8BDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOVMBDEeeYn_dSdxPM_g" portName="in_surface" incomingLinks="_BupOZcBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOVcBDEeeYn_dSdxPM_g" portName="in_field" incomingLinks="_BupOZsBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOVsBDEeeYn_dSdxPM_g" portName="in_type" incomingLinks="_BupOZ8BDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOV8BDEeeYn_dSdxPM_g" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_BupOaMBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOWMBDEeeYn_dSdxPM_g" portName="out_surface" portType="OUTPUT_PORT" outgoingLinks="_BupOacBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOWcBDEeeYn_dSdxPM_g" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_BupOasBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOWsBDEeeYn_dSdxPM_g" portName="out_field_1" portType="OUTPUT_PORT" outgoingLinks="_BupObMBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOW8BDEeeYn_dSdxPM_g" portName="out_field_2" portType="OUTPUT_PORT" outgoingLinks="_BupObcBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOXMBDEeeYn_dSdxPM_g" portName="out_field_3" portType="OUTPUT_PORT" outgoingLinks="_BupObsBDEeeYn_dSdxPM_g"/>
+          </modelType>
+        </atomicModels>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_BupOXcBDEeeYn_dSdxPM_g" instanceName="irrigator">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_BupOXsBDEeeYn_dSdxPM_g" modelName="irrigation" defined="true" sourceFileRelativePath="irrigation.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOX8BDEeeYn_dSdxPM_g" portName="in_id" incomingLinks="_BupOaMBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOYMBDEeeYn_dSdxPM_g" portName="in_surface" incomingLinks="_BupOacBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOYcBDEeeYn_dSdxPM_g" portName="in_type" incomingLinks="_BupOasBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOYsBDEeeYn_dSdxPM_g" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_BupOa8BDEeeYn_dSdxPM_g"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOY8BDEeeYn_dSdxPM_g" name="speed"/>
+          </modelType>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOZMBDEeeYn_dSdxPM_g" name="speed" value="30"/>
+        </atomicModels>
+        <links xmi:type="CoupledLink" xmi:id="_BupOZcBDEeeYn_dSdxPM_g" target="_BupOVMBDEeeYn_dSdxPM_g" source="_BupOTsBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOZsBDEeeYn_dSdxPM_g" target="_BupOVcBDEeeYn_dSdxPM_g" source="_BupOT8BDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOZ8BDEeeYn_dSdxPM_g" target="_BupOVsBDEeeYn_dSdxPM_g" source="_BupOUMBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOaMBDEeeYn_dSdxPM_g" target="_BupOX8BDEeeYn_dSdxPM_g" source="_BupOV8BDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOacBDEeeYn_dSdxPM_g" target="_BupOYMBDEeeYn_dSdxPM_g" source="_BupOWMBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOasBDEeeYn_dSdxPM_g" target="_BupOYcBDEeeYn_dSdxPM_g" source="_BupOWcBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOa8BDEeeYn_dSdxPM_g" target="_BupOU8BDEeeYn_dSdxPM_g" source="_BupOYsBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupObMBDEeeYn_dSdxPM_g" target="_BupOS8BDEeeYn_dSdxPM_g" source="_BupOWsBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupObcBDEeeYn_dSdxPM_g" target="_BupOTMBDEeeYn_dSdxPM_g" source="_BupOW8BDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupObsBDEeeYn_dSdxPM_g" target="_BupOTcBDEeeYn_dSdxPM_g" source="_BupOXMBDEeeYn_dSdxPM_g"/>
+      </modelType>
+    </coupledModels>
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_BupOb8BDEeeYn_dSdxPM_g" instanceName="hm">
+      <modelType xmi:type="CoupledModelType" xmi:id="_BupOcMBDEeeYn_dSdxPM_g" modelName="hm">
+        <ports xmi:type="CoupledPort" xmi:id="_BupOccBDEeeYn_dSdxPM_g" portName="out_field_1" portType="OUTPUT_PORT" incomingLinks="_BupOnMBDEeeYn_dSdxPM_g" outgoingLinks="_BupPL8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOcsBDEeeYn_dSdxPM_g" portName="out_field_2" portType="OUTPUT_PORT" incomingLinks="_BupOncBDEeeYn_dSdxPM_g" outgoingLinks="_BupPMMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOc8BDEeeYn_dSdxPM_g" portName="out_field_3" portType="OUTPUT_PORT" incomingLinks="_BupOnsBDEeeYn_dSdxPM_g" outgoingLinks="_BupPMcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOdMBDEeeYn_dSdxPM_g" portName="out_bushels" portType="OUTPUT_PORT" incomingLinks="_BupOn8BDEeeYn_dSdxPM_g" outgoingLinks="_BupPMsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOdcBDEeeYn_dSdxPM_g" portName="out_type" portType="OUTPUT_PORT" incomingLinks="_BupOoMBDEeeYn_dSdxPM_g" outgoingLinks="_BupPM8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOdsBDEeeYn_dSdxPM_g" portName="in_surface" incomingLinks="_BupPIcBDEeeYn_dSdxPM_g _BupPJMBDEeeYn_dSdxPM_g _BupPJ8BDEeeYn_dSdxPM_g" outgoingLinks="_BupOlcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOd8BDEeeYn_dSdxPM_g" portName="in_field" incomingLinks="_BupPIMBDEeeYn_dSdxPM_g _BupPI8BDEeeYn_dSdxPM_g _BupPJsBDEeeYn_dSdxPM_g" outgoingLinks="_BupOlsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="CoupledPort" xmi:id="_BupOeMBDEeeYn_dSdxPM_g" portName="in_type" incomingLinks="_BupPIsBDEeeYn_dSdxPM_g _BupPJcBDEeeYn_dSdxPM_g _BupPKMBDEeeYn_dSdxPM_g" outgoingLinks="_BupOl8BDEeeYn_dSdxPM_g"/>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_BupOecBDEeeYn_dSdxPM_g" instanceName="que_hm">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_BupOesBDEeeYn_dSdxPM_g" modelName="queue" defined="true" sourceFileRelativePath="queue.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOe8BDEeeYn_dSdxPM_g" portName="in_done" incomingLinks="_BupOm8BDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOfMBDEeeYn_dSdxPM_g" portName="in_surface" incomingLinks="_BupOlcBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOfcBDEeeYn_dSdxPM_g" portName="in_field" incomingLinks="_BupOlsBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOfsBDEeeYn_dSdxPM_g" portName="in_type" incomingLinks="_BupOl8BDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOf8BDEeeYn_dSdxPM_g" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_BupOmMBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOgMBDEeeYn_dSdxPM_g" portName="out_surface" portType="OUTPUT_PORT" outgoingLinks="_BupOmcBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOgcBDEeeYn_dSdxPM_g" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_BupOmsBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOgsBDEeeYn_dSdxPM_g" portName="out_field_1" portType="OUTPUT_PORT" outgoingLinks="_BupOnMBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOg8BDEeeYn_dSdxPM_g" portName="out_field_2" portType="OUTPUT_PORT" outgoingLinks="_BupOncBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOhMBDEeeYn_dSdxPM_g" portName="out_field_3" portType="OUTPUT_PORT" outgoingLinks="_BupOnsBDEeeYn_dSdxPM_g"/>
+          </modelType>
+        </atomicModels>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_BupOhcBDEeeYn_dSdxPM_g" instanceName="harvester">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_BupOhsBDEeeYn_dSdxPM_g" modelName="harvester" defined="true" sourceFileRelativePath="harvester.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOh8BDEeeYn_dSdxPM_g" portName="in_id" incomingLinks="_BupOmMBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOiMBDEeeYn_dSdxPM_g" portName="in_surface" incomingLinks="_BupOmcBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_BupOicBDEeeYn_dSdxPM_g" portName="in_type" incomingLinks="_BupOmsBDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOisBDEeeYn_dSdxPM_g" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_BupOm8BDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOi8BDEeeYn_dSdxPM_g" portName="out_bushels" portType="OUTPUT_PORT" outgoingLinks="_BupOn8BDEeeYn_dSdxPM_g"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_BupOjMBDEeeYn_dSdxPM_g" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_BupOoMBDEeeYn_dSdxPM_g"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOjcBDEeeYn_dSdxPM_g" name="speed"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOjsBDEeeYn_dSdxPM_g" name="yield_type_1"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOj8BDEeeYn_dSdxPM_g" name="yield_type_2"/>
+            <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOkMBDEeeYn_dSdxPM_g" name="yield_type_3"/>
+          </modelType>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOkcBDEeeYn_dSdxPM_g" name="speed" value="15"/>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOksBDEeeYn_dSdxPM_g" name="yield_type_1" value="150"/>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOk8BDEeeYn_dSdxPM_g" name="yield_type_2" value="120"/>
+          <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOlMBDEeeYn_dSdxPM_g" name="yield_type_3" value="170"/>
+        </atomicModels>
+        <links xmi:type="CoupledLink" xmi:id="_BupOlcBDEeeYn_dSdxPM_g" target="_BupOfMBDEeeYn_dSdxPM_g" source="_BupOdsBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOlsBDEeeYn_dSdxPM_g" target="_BupOfcBDEeeYn_dSdxPM_g" source="_BupOd8BDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOl8BDEeeYn_dSdxPM_g" target="_BupOfsBDEeeYn_dSdxPM_g" source="_BupOeMBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOmMBDEeeYn_dSdxPM_g" target="_BupOh8BDEeeYn_dSdxPM_g" source="_BupOf8BDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOmcBDEeeYn_dSdxPM_g" target="_BupOiMBDEeeYn_dSdxPM_g" source="_BupOgMBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOmsBDEeeYn_dSdxPM_g" target="_BupOicBDEeeYn_dSdxPM_g" source="_BupOgcBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOm8BDEeeYn_dSdxPM_g" target="_BupOe8BDEeeYn_dSdxPM_g" source="_BupOisBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOnMBDEeeYn_dSdxPM_g" target="_BupOccBDEeeYn_dSdxPM_g" source="_BupOgsBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOncBDEeeYn_dSdxPM_g" target="_BupOcsBDEeeYn_dSdxPM_g" source="_BupOg8BDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOnsBDEeeYn_dSdxPM_g" target="_BupOc8BDEeeYn_dSdxPM_g" source="_BupOhMBDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOn8BDEeeYn_dSdxPM_g" target="_BupOdMBDEeeYn_dSdxPM_g" source="_BupOi8BDEeeYn_dSdxPM_g"/>
+        <links xmi:type="CoupledLink" xmi:id="_BupOoMBDEeeYn_dSdxPM_g" target="_BupOdcBDEeeYn_dSdxPM_g" source="_BupOjMBDEeeYn_dSdxPM_g"/>
+      </modelType>
+    </coupledModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_BupOocBDEeeYn_dSdxPM_g" instanceName="f1">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_BupOosBDEeeYn_dSdxPM_g" modelName="field" defined="true" sourceFileRelativePath="field.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_BupOo8BDEeeYn_dSdxPM_g" portName="in_done" incomingLinks="_BupPKcBDEeeYn_dSdxPM_g _BupPLMBDEeeYn_dSdxPM_g _BupPL8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_BupOpMBDEeeYn_dSdxPM_g" portName="in_stop" incomingLinks="_BupPC8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOpcBDEeeYn_dSdxPM_g" portName="out_water_field" portType="OUTPUT_PORT" outgoingLinks="_BupPDsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOpsBDEeeYn_dSdxPM_g" portName="out_water_surface" portType="OUTPUT_PORT" outgoingLinks="_BupPD8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOp8BDEeeYn_dSdxPM_g" portName="out_water_type" portType="OUTPUT_PORT" outgoingLinks="_BupPEMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOqMBDEeeYn_dSdxPM_g" portName="out_sower_field" portType="OUTPUT_PORT" outgoingLinks="_BupPF8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOqcBDEeeYn_dSdxPM_g" portName="out_sower_surface" portType="OUTPUT_PORT" outgoingLinks="_BupPGMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOqsBDEeeYn_dSdxPM_g" portName="out_sower_type" portType="OUTPUT_PORT" outgoingLinks="_BupPGcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOq8BDEeeYn_dSdxPM_g" portName="out_harvest_field" portType="OUTPUT_PORT" outgoingLinks="_BupPIMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOrMBDEeeYn_dSdxPM_g" portName="out_harvest_surface" portType="OUTPUT_PORT" outgoingLinks="_BupPIcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOrcBDEeeYn_dSdxPM_g" portName="out_harvest_type" portType="OUTPUT_PORT" outgoingLinks="_BupPIsBDEeeYn_dSdxPM_g"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOrsBDEeeYn_dSdxPM_g" name="surface"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOr8BDEeeYn_dSdxPM_g" name="type"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOsMBDEeeYn_dSdxPM_g" name="id"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOscBDEeeYn_dSdxPM_g" name="growth_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOssBDEeeYn_dSdxPM_g" name="growth_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOs8BDEeeYn_dSdxPM_g" name="growth_rate_3"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOtMBDEeeYn_dSdxPM_g" name="evaporation_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOtcBDEeeYn_dSdxPM_g" name="evaporation_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOtsBDEeeYn_dSdxPM_g" name="evaporation_rate_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOt8BDEeeYn_dSdxPM_g" name="surface" value="300"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOuMBDEeeYn_dSdxPM_g" name="type" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOucBDEeeYn_dSdxPM_g" name="id" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOusBDEeeYn_dSdxPM_g" name="growth_rate_1" value="50"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOu8BDEeeYn_dSdxPM_g" name="growth_rate_2" value="40"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOvMBDEeeYn_dSdxPM_g" name="growth_rate_3" value="60"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOvcBDEeeYn_dSdxPM_g" name="evaporation_rate_1" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOvsBDEeeYn_dSdxPM_g" name="evaporation_rate_2" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupOv8BDEeeYn_dSdxPM_g" name="evaporation_rate_3" value="3"/>
+    </atomicModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_BupOwMBDEeeYn_dSdxPM_g" instanceName="f2">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_BupOwcBDEeeYn_dSdxPM_g" modelName="field" defined="true" sourceFileRelativePath="field.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_BupOwsBDEeeYn_dSdxPM_g" portName="in_done" incomingLinks="_BupPKsBDEeeYn_dSdxPM_g _BupPLcBDEeeYn_dSdxPM_g _BupPMMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_BupOw8BDEeeYn_dSdxPM_g" portName="in_stop" incomingLinks="_BupPDMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOxMBDEeeYn_dSdxPM_g" portName="out_water_field" portType="OUTPUT_PORT" outgoingLinks="_BupPEcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOxcBDEeeYn_dSdxPM_g" portName="out_water_surface" portType="OUTPUT_PORT" outgoingLinks="_BupPEsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOxsBDEeeYn_dSdxPM_g" portName="out_water_type" portType="OUTPUT_PORT" outgoingLinks="_BupPE8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOx8BDEeeYn_dSdxPM_g" portName="out_sower_field" portType="OUTPUT_PORT" outgoingLinks="_BupPGsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOyMBDEeeYn_dSdxPM_g" portName="out_sower_surface" portType="OUTPUT_PORT" outgoingLinks="_BupPG8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOycBDEeeYn_dSdxPM_g" portName="out_sower_type" portType="OUTPUT_PORT" outgoingLinks="_BupPHMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOysBDEeeYn_dSdxPM_g" portName="out_harvest_field" portType="OUTPUT_PORT" outgoingLinks="_BupPI8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOy8BDEeeYn_dSdxPM_g" portName="out_harvest_surface" portType="OUTPUT_PORT" outgoingLinks="_BupPJMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupOzMBDEeeYn_dSdxPM_g" portName="out_harvest_type" portType="OUTPUT_PORT" outgoingLinks="_BupPJcBDEeeYn_dSdxPM_g"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOzcBDEeeYn_dSdxPM_g" name="surface"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOzsBDEeeYn_dSdxPM_g" name="type"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupOz8BDEeeYn_dSdxPM_g" name="id"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO0MBDEeeYn_dSdxPM_g" name="growth_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO0cBDEeeYn_dSdxPM_g" name="growth_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO0sBDEeeYn_dSdxPM_g" name="growth_rate_3"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO08BDEeeYn_dSdxPM_g" name="evaporation_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO1MBDEeeYn_dSdxPM_g" name="evaporation_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO1cBDEeeYn_dSdxPM_g" name="evaporation_rate_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO1sBDEeeYn_dSdxPM_g" name="surface" value="500"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO18BDEeeYn_dSdxPM_g" name="type" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO2MBDEeeYn_dSdxPM_g" name="id" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO2cBDEeeYn_dSdxPM_g" name="growth_rate_1" value="50"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO2sBDEeeYn_dSdxPM_g" name="growth_rate_2" value="40"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO28BDEeeYn_dSdxPM_g" name="growth_rate_3" value="60"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO3MBDEeeYn_dSdxPM_g" name="evaporation_rate_1" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO3cBDEeeYn_dSdxPM_g" name="evaporation_rate_2" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO3sBDEeeYn_dSdxPM_g" name="evaporation_rate_3" value="3"/>
+    </atomicModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_BupO38BDEeeYn_dSdxPM_g" instanceName="f3">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_BupO4MBDEeeYn_dSdxPM_g" modelName="field" defined="true" sourceFileRelativePath="field.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_BupO4cBDEeeYn_dSdxPM_g" portName="in_done" incomingLinks="_BupPK8BDEeeYn_dSdxPM_g _BupPLsBDEeeYn_dSdxPM_g _BupPMcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_BupO4sBDEeeYn_dSdxPM_g" portName="in_stop" incomingLinks="_BupPDcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupO48BDEeeYn_dSdxPM_g" portName="out_water_field" portType="OUTPUT_PORT" outgoingLinks="_BupPFMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupO5MBDEeeYn_dSdxPM_g" portName="out_water_surface" portType="OUTPUT_PORT" outgoingLinks="_BupPFcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupO5cBDEeeYn_dSdxPM_g" portName="out_water_type" portType="OUTPUT_PORT" outgoingLinks="_BupPFsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupO5sBDEeeYn_dSdxPM_g" portName="out_sower_field" portType="OUTPUT_PORT" outgoingLinks="_BupPHcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupO58BDEeeYn_dSdxPM_g" portName="out_sower_surface" portType="OUTPUT_PORT" outgoingLinks="_BupPHsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupO6MBDEeeYn_dSdxPM_g" portName="out_sower_type" portType="OUTPUT_PORT" outgoingLinks="_BupPH8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupO6cBDEeeYn_dSdxPM_g" portName="out_harvest_field" portType="OUTPUT_PORT" outgoingLinks="_BupPJsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupO6sBDEeeYn_dSdxPM_g" portName="out_harvest_surface" portType="OUTPUT_PORT" outgoingLinks="_BupPJ8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupO68BDEeeYn_dSdxPM_g" portName="out_harvest_type" portType="OUTPUT_PORT" outgoingLinks="_BupPKMBDEeeYn_dSdxPM_g"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO7MBDEeeYn_dSdxPM_g" name="surface"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO7cBDEeeYn_dSdxPM_g" name="type"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO7sBDEeeYn_dSdxPM_g" name="id"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO78BDEeeYn_dSdxPM_g" name="growth_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO8MBDEeeYn_dSdxPM_g" name="growth_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO8cBDEeeYn_dSdxPM_g" name="growth_rate_3"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO8sBDEeeYn_dSdxPM_g" name="evaporation_rate_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO88BDEeeYn_dSdxPM_g" name="evaporation_rate_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupO9MBDEeeYn_dSdxPM_g" name="evaporation_rate_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO9cBDEeeYn_dSdxPM_g" name="surface" value="1000"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO9sBDEeeYn_dSdxPM_g" name="type" value="3"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO98BDEeeYn_dSdxPM_g" name="id" value="3"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO-MBDEeeYn_dSdxPM_g" name="growth_rate_1" value="50"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO-cBDEeeYn_dSdxPM_g" name="growth_rate_2" value="40"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO-sBDEeeYn_dSdxPM_g" name="growth_rate_3" value="60"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO-8BDEeeYn_dSdxPM_g" name="evaporation_rate_1" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO_MBDEeeYn_dSdxPM_g" name="evaporation_rate_2" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupO_cBDEeeYn_dSdxPM_g" name="evaporation_rate_3" value="3"/>
+    </atomicModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_BupO_sBDEeeYn_dSdxPM_g" instanceName="market">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_BupO_8BDEeeYn_dSdxPM_g" modelName="market" defined="true" sourceFileRelativePath="market.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_BupPAMBDEeeYn_dSdxPM_g" portName="in_type" incomingLinks="_BupPM8BDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_BupPAcBDEeeYn_dSdxPM_g" portName="in_bushels" incomingLinks="_BupPMsBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupPAsBDEeeYn_dSdxPM_g" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_BupPNMBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupPA8BDEeeYn_dSdxPM_g" portName="out_bushels" portType="OUTPUT_PORT" outgoingLinks="_BupPNcBDEeeYn_dSdxPM_g"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_BupPBMBDEeeYn_dSdxPM_g" portName="out_sales" portType="OUTPUT_PORT" outgoingLinks="_BupPNsBDEeeYn_dSdxPM_g"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupPBcBDEeeYn_dSdxPM_g" name="value_type_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupPBsBDEeeYn_dSdxPM_g" name="value_type_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_BupPB8BDEeeYn_dSdxPM_g" name="value_type_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupPCMBDEeeYn_dSdxPM_g" name="value_type_1" value="2.5"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupPCcBDEeeYn_dSdxPM_g" name="value_type_2" value="3.2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_BupPCsBDEeeYn_dSdxPM_g" name="value_type_3" value="4.1"/>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_BupPC8BDEeeYn_dSdxPM_g" target="_BupOpMBDEeeYn_dSdxPM_g" source="_BupOIMBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPDMBDEeeYn_dSdxPM_g" target="_BupOw8BDEeeYn_dSdxPM_g" source="_BupOIcBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPDcBDEeeYn_dSdxPM_g" target="_BupO4sBDEeeYn_dSdxPM_g" source="_BupOIsBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPDsBDEeeYn_dSdxPM_g" target="_BupOT8BDEeeYn_dSdxPM_g" source="_BupOpcBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPD8BDEeeYn_dSdxPM_g" target="_BupOTsBDEeeYn_dSdxPM_g" source="_BupOpsBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPEMBDEeeYn_dSdxPM_g" target="_BupOUMBDEeeYn_dSdxPM_g" source="_BupOp8BDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPEcBDEeeYn_dSdxPM_g" target="_BupOT8BDEeeYn_dSdxPM_g" source="_BupOxMBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPEsBDEeeYn_dSdxPM_g" target="_BupOTsBDEeeYn_dSdxPM_g" source="_BupOxcBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPE8BDEeeYn_dSdxPM_g" target="_BupOUMBDEeeYn_dSdxPM_g" source="_BupOxsBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPFMBDEeeYn_dSdxPM_g" target="_BupOT8BDEeeYn_dSdxPM_g" source="_BupO48BDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPFcBDEeeYn_dSdxPM_g" target="_BupOTsBDEeeYn_dSdxPM_g" source="_BupO5MBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPFsBDEeeYn_dSdxPM_g" target="_BupOUMBDEeeYn_dSdxPM_g" source="_BupO5cBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPF8BDEeeYn_dSdxPM_g" target="_BupOKcBDEeeYn_dSdxPM_g" source="_BupOqMBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPGMBDEeeYn_dSdxPM_g" target="_BupOKMBDEeeYn_dSdxPM_g" source="_BupOqcBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPGcBDEeeYn_dSdxPM_g" target="_BupOKsBDEeeYn_dSdxPM_g" source="_BupOqsBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPGsBDEeeYn_dSdxPM_g" target="_BupOKcBDEeeYn_dSdxPM_g" source="_BupOx8BDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPG8BDEeeYn_dSdxPM_g" target="_BupOKMBDEeeYn_dSdxPM_g" source="_BupOyMBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPHMBDEeeYn_dSdxPM_g" target="_BupOKsBDEeeYn_dSdxPM_g" source="_BupOycBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPHcBDEeeYn_dSdxPM_g" target="_BupOKcBDEeeYn_dSdxPM_g" source="_BupO5sBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPHsBDEeeYn_dSdxPM_g" target="_BupOKMBDEeeYn_dSdxPM_g" source="_BupO58BDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPH8BDEeeYn_dSdxPM_g" target="_BupOKsBDEeeYn_dSdxPM_g" source="_BupO6MBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPIMBDEeeYn_dSdxPM_g" target="_BupOd8BDEeeYn_dSdxPM_g" source="_BupOq8BDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPIcBDEeeYn_dSdxPM_g" target="_BupOdsBDEeeYn_dSdxPM_g" source="_BupOrMBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPIsBDEeeYn_dSdxPM_g" target="_BupOeMBDEeeYn_dSdxPM_g" source="_BupOrcBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPI8BDEeeYn_dSdxPM_g" target="_BupOd8BDEeeYn_dSdxPM_g" source="_BupOysBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPJMBDEeeYn_dSdxPM_g" target="_BupOdsBDEeeYn_dSdxPM_g" source="_BupOy8BDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPJcBDEeeYn_dSdxPM_g" target="_BupOeMBDEeeYn_dSdxPM_g" source="_BupOzMBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPJsBDEeeYn_dSdxPM_g" target="_BupOd8BDEeeYn_dSdxPM_g" source="_BupO6cBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPJ8BDEeeYn_dSdxPM_g" target="_BupOdsBDEeeYn_dSdxPM_g" source="_BupO6sBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPKMBDEeeYn_dSdxPM_g" target="_BupOeMBDEeeYn_dSdxPM_g" source="_BupO68BDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPKcBDEeeYn_dSdxPM_g" target="_BupOo8BDEeeYn_dSdxPM_g" source="_BupOS8BDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPKsBDEeeYn_dSdxPM_g" target="_BupOwsBDEeeYn_dSdxPM_g" source="_BupOTMBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPK8BDEeeYn_dSdxPM_g" target="_BupO4cBDEeeYn_dSdxPM_g" source="_BupOTcBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPLMBDEeeYn_dSdxPM_g" target="_BupOo8BDEeeYn_dSdxPM_g" source="_BupOJcBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPLcBDEeeYn_dSdxPM_g" target="_BupOwsBDEeeYn_dSdxPM_g" source="_BupOJsBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPLsBDEeeYn_dSdxPM_g" target="_BupO4cBDEeeYn_dSdxPM_g" source="_BupOJ8BDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPL8BDEeeYn_dSdxPM_g" target="_BupOo8BDEeeYn_dSdxPM_g" source="_BupOccBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPMMBDEeeYn_dSdxPM_g" target="_BupOwsBDEeeYn_dSdxPM_g" source="_BupOcsBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPMcBDEeeYn_dSdxPM_g" target="_BupO4cBDEeeYn_dSdxPM_g" source="_BupOc8BDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPMsBDEeeYn_dSdxPM_g" target="_BupPAcBDEeeYn_dSdxPM_g" source="_BupOdMBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPM8BDEeeYn_dSdxPM_g" target="_BupPAMBDEeeYn_dSdxPM_g" source="_BupOdcBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPNMBDEeeYn_dSdxPM_g" target="_BupOHsBDEeeYn_dSdxPM_g" source="_BupPAsBDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPNcBDEeeYn_dSdxPM_g" target="_BupOHcBDEeeYn_dSdxPM_g" source="_BupPA8BDEeeYn_dSdxPM_g"/>
+    <links xmi:type="CoupledLink" xmi:id="_BupPNsBDEeeYn_dSdxPM_g" target="_BupOH8BDEeeYn_dSdxPM_g" source="_BupPBMBDEeeYn_dSdxPM_g"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_BupPN8BDEeeYn_dSdxPM_g" type="DEVS" element="_BupOHMBDEeeYn_dSdxPM_g" name="Farm_Big_Fast.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_BupPOMBDEeeYn_dSdxPM_g"/>
+  </notation:Diagram>
+</xmi:XMI>

@@ -1,0 +1,39 @@
+# Filename:harvester.gam
+# export classpath:
+# Title:harvester
+# background:
+# cant units:0
+# Cant Ports:6
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:79
+# 	Port ID:in_id
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:80
+# 	Port ID:in_surface
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:81
+# 	Port ID:in_type
+# 	Port In/Out:In
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:82
+# 	Port ID:out_id
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:83
+# 	Port ID:out_bushels
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:84
+# 	Port ID:out_type
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# Cant Links:0
+# Initial Name:
+# Vars cant:0

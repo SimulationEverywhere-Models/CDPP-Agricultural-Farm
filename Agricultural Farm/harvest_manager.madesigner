@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_KEJhcMA4EeeLaKp4S-TmZQ" modelName="top" defined="true" sourceFileRelativePath="harvest_manager.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_KEJhccA4EeeLaKp4S-TmZQ" portName="out_field_1" portType="OUTPUT_PORT" incomingLinks="_KEJhnMA4EeeLaKp4S-TmZQ"/>
+    <ports xmi:type="CoupledPort" xmi:id="_KEJhcsA4EeeLaKp4S-TmZQ" portName="out_field_2" portType="OUTPUT_PORT" incomingLinks="_KEJhncA4EeeLaKp4S-TmZQ"/>
+    <ports xmi:type="CoupledPort" xmi:id="_KEJhc8A4EeeLaKp4S-TmZQ" portName="out_field_3" portType="OUTPUT_PORT" incomingLinks="_KEJhnsA4EeeLaKp4S-TmZQ"/>
+    <ports xmi:type="CoupledPort" xmi:id="_KEJhdMA4EeeLaKp4S-TmZQ" portName="out_bushels" portType="OUTPUT_PORT" incomingLinks="_KEJhn8A4EeeLaKp4S-TmZQ"/>
+    <ports xmi:type="CoupledPort" xmi:id="_KEJhdcA4EeeLaKp4S-TmZQ" portName="out_type" portType="OUTPUT_PORT" incomingLinks="_KEJhoMA4EeeLaKp4S-TmZQ"/>
+    <ports xmi:type="CoupledPort" xmi:id="_KEJhdsA4EeeLaKp4S-TmZQ" portName="in_surface" outgoingLinks="_KEJhlcA4EeeLaKp4S-TmZQ"/>
+    <ports xmi:type="CoupledPort" xmi:id="_KEJhd8A4EeeLaKp4S-TmZQ" portName="in_field" outgoingLinks="_KEJhlsA4EeeLaKp4S-TmZQ"/>
+    <ports xmi:type="CoupledPort" xmi:id="_KEJheMA4EeeLaKp4S-TmZQ" portName="in_type" outgoingLinks="_KEJhl8A4EeeLaKp4S-TmZQ"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_KEJhecA4EeeLaKp4S-TmZQ" instanceName="queue">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_KEJhesA4EeeLaKp4S-TmZQ" modelName="queue" defined="true" sourceFileRelativePath="queue.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_KEJhe8A4EeeLaKp4S-TmZQ" portName="in_done" incomingLinks="_KEJhm8A4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_KEJhfMA4EeeLaKp4S-TmZQ" portName="in_surface" incomingLinks="_KEJhlcA4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_KEJhfcA4EeeLaKp4S-TmZQ" portName="in_field" incomingLinks="_KEJhlsA4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_KEJhfsA4EeeLaKp4S-TmZQ" portName="in_type" incomingLinks="_KEJhl8A4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_KEJhf8A4EeeLaKp4S-TmZQ" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_KEJhmMA4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_KEJhgMA4EeeLaKp4S-TmZQ" portName="out_surface" portType="OUTPUT_PORT" outgoingLinks="_KEJhmcA4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_KEJhgcA4EeeLaKp4S-TmZQ" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_KEJhmsA4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_KEJhgsA4EeeLaKp4S-TmZQ" portName="out_field_1" portType="OUTPUT_PORT" outgoingLinks="_KEJhnMA4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_KEJhg8A4EeeLaKp4S-TmZQ" portName="out_field_2" portType="OUTPUT_PORT" outgoingLinks="_KEJhncA4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_KEJhhMA4EeeLaKp4S-TmZQ" portName="out_field_3" portType="OUTPUT_PORT" outgoingLinks="_KEJhnsA4EeeLaKp4S-TmZQ"/>
+      </modelType>
+    </atomicModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_KEJhhcA4EeeLaKp4S-TmZQ" instanceName="harvester">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_KEJhhsA4EeeLaKp4S-TmZQ" modelName="harvester" defined="true" sourceFileRelativePath="harvester.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_KEJhh8A4EeeLaKp4S-TmZQ" portName="in_id" incomingLinks="_KEJhmMA4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_KEJhiMA4EeeLaKp4S-TmZQ" portName="in_surface" incomingLinks="_KEJhmcA4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_KEJhicA4EeeLaKp4S-TmZQ" portName="in_type" incomingLinks="_KEJhmsA4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_KEJhisA4EeeLaKp4S-TmZQ" portName="out_id" portType="OUTPUT_PORT" outgoingLinks="_KEJhm8A4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_KEJhi8A4EeeLaKp4S-TmZQ" portName="out_bushels" portType="OUTPUT_PORT" outgoingLinks="_KEJhn8A4EeeLaKp4S-TmZQ"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_KEJhjMA4EeeLaKp4S-TmZQ" portName="out_type" portType="OUTPUT_PORT" outgoingLinks="_KEJhoMA4EeeLaKp4S-TmZQ"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_KEJhjcA4EeeLaKp4S-TmZQ" name="speed"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_KEJhjsA4EeeLaKp4S-TmZQ" name="yield_type_1"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_KEJhj8A4EeeLaKp4S-TmZQ" name="yield_type_2"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_KEJhkMA4EeeLaKp4S-TmZQ" name="yield_type_3"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_KEJhkcA4EeeLaKp4S-TmZQ" name="speed" value="10"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_KEJhksA4EeeLaKp4S-TmZQ" name="yield_type_1" value="150"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_KEJhk8A4EeeLaKp4S-TmZQ" name="yield_type_2" value="120"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_KEJhlMA4EeeLaKp4S-TmZQ" name="yield_type_3" value="170"/>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhlcA4EeeLaKp4S-TmZQ" target="_KEJhfMA4EeeLaKp4S-TmZQ" source="_KEJhdsA4EeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhlsA4EeeLaKp4S-TmZQ" target="_KEJhfcA4EeeLaKp4S-TmZQ" source="_KEJhd8A4EeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhl8A4EeeLaKp4S-TmZQ" target="_KEJhfsA4EeeLaKp4S-TmZQ" source="_KEJheMA4EeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhmMA4EeeLaKp4S-TmZQ" target="_KEJhh8A4EeeLaKp4S-TmZQ" source="_KEJhf8A4EeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhmcA4EeeLaKp4S-TmZQ" target="_KEJhiMA4EeeLaKp4S-TmZQ" source="_KEJhgMA4EeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhmsA4EeeLaKp4S-TmZQ" target="_KEJhicA4EeeLaKp4S-TmZQ" source="_KEJhgcA4EeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhm8A4EeeLaKp4S-TmZQ" target="_KEJhe8A4EeeLaKp4S-TmZQ" source="_KEJhisA4EeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhnMA4EeeLaKp4S-TmZQ" target="_KEJhccA4EeeLaKp4S-TmZQ" source="_KEJhgsA4EeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhncA4EeeLaKp4S-TmZQ" target="_KEJhcsA4EeeLaKp4S-TmZQ" source="_KEJhg8A4EeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhnsA4EeeLaKp4S-TmZQ" target="_KEJhc8A4EeeLaKp4S-TmZQ" source="_KEJhhMA4EeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhn8A4EeeLaKp4S-TmZQ" target="_KEJhdMA4EeeLaKp4S-TmZQ" source="_KEJhi8A4EeeLaKp4S-TmZQ"/>
+    <links xmi:type="CoupledLink" xmi:id="_KEJhoMA4EeeLaKp4S-TmZQ" target="_KEJhdcA4EeeLaKp4S-TmZQ" source="_KEJhjMA4EeeLaKp4S-TmZQ"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_KEJhocA4EeeLaKp4S-TmZQ" type="DEVS" element="_KEJhcMA4EeeLaKp4S-TmZQ" name="harvest_manager.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_KEJhosA4EeeLaKp4S-TmZQ"/>
+  </notation:Diagram>
+</xmi:XMI>
